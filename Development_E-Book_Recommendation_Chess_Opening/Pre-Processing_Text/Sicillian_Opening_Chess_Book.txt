@@ -1,0 +1,452 @@
+ 
+MODERNIZED: 
+THE OPEN 
+SICILIAN
+IM Zhanibek Amanov 
+FM Kostya Kavutskiy
+METROPOLITAN CHESS PUBLISHING
+      Contents  
+   Introduction page page 7
+1  The Najdorf Variation   9
+  1a Najdorf – 6.h3 e6 page page 10
+  1b Najdorf – 6.h3 e5 ppage 82
+  1c Najdorf – 6.h3 other ppage 118
+2  Systems with 2...e6   153
+  2a The Kan Variation 154
+  2b The Taimanov Variation 174
+3  The Classical Variation   226
+4  The Dragon Variation page 284
+5  The Accelerated Dragon page 333
+6  The Sveshnikov & Cousins page 378
+  6a The Sveshnikov Variation page 379
+  6b The Kalashnikov and Löwenthal Variations page 408
+7  Minor Sicilians page 439
+  7a The Four Knights Variation page 440 
+  7b Rare Sicilians page 475
+  Solutions to the Exercises pagpage 514
+  Conclusion page 548
+  Index of Variations  page 549
+  Bibliography page 562
+!
+!!???!??!#™÷=²³±µ+––+ƒ‚°©„…¹N“Good moveExcellent moveBad moveBlunderDeserves attentionDubiousCheckmateForced; the only moveUnclear positionEqual positionSlight advantage for WhiteSlight advantage for BlackDistinct advantage for WhiteDistinct advantage for BlackWhite is winningBlack is winningwith the initiativewith the attackinsufficient compensation for the materialsufficient compensation for the materialwith counterplaywith the idea...better is...NoveltyTime pressure
+Symbols
+  Introduction 7The Sicilian Defense is one of the most complex and powerful defenses 
+available to Black, and it duly remains the choice of many top players as their favorite response to 1.e4. Historically, it has mainly been believed 
+that the critical test of this opening was to attack it directly via the Open Sicilian, which occurs after 1.e4 c5 2.Nf3 followed by 3.d4, opening up the center. The dynamics of the resulting positions are such that White will get a lead in development while Black will have an extra central pawn. This leads to incredibly sharp middlegames as both sides try to make use of their advantages. 
+Throughout this book we will attempt to either transform White’s lead in 
+development into a devastating kingside attack, or choose a more positional approach, playing for strategic pluses such as having extra space or a healthier pawn structure. 
+However, our ambitious approach is not without risk; often, the first player 
+to err or lose the thread of the struggle will be quickly punished. It is no surprise that the Sicilian is one of the most popular openings around—it offers Black great potential not just to equalize, but to fight for victory as well! If you feel that you are up to the challenge and interested in pursuing the sharpest way of meeting the Sicilian Defense, then we have written this book for you.
+In our humble opinion we believe that the modern philosophy of opening 
+study is to blend the opening and middlegame stages together. Nowadays most professional players make their opening decisions based on the kinds of middlegame positions that they would like to reach. They then study the ins and outs of those middlegames as much (if not more) as the specific moves of each opening. Introduction XIIIIIIIIY  
+9rsnlwqkvlntr0  
+9zpp+pzppzpp0  
+9-+-+-+-+0  
+9+-zp-+-+-0  
+9-+-+P+-+0  
+9+-+-+N+-0  
+9PzPPzP-zPPzP0  
+9tRNvLQmKL+R0  
+xiiiiiiiiy
+1.e4 c5 2.Nf3
+8 IntroductionThis is exactly what we believe is the best approach to building an opening 
+repertoire. True mastery of the opening occurs when a player knows the 
+specific theory and understands the future complexities of the structure. After all, what good is it to get a decent position out of the opening if you have no idea what to do with it afterwards? 
+With this in mind, our main goal in choosing lines to recommend was to 
+reach middlegame positions with well-defined plans for both sides. We then hope to illustrate how to handle a typical middlegame in each variation through the use of instructive games.  
+The purpose of this book is not only to provide a complete repertoire for 
+the White side of the Open Sicilian, but also to ingrain a number of thematic positional and tactical motifs as well. 
+After analyzing hundreds of high-level games for this book, we chose only the most instructive to feature, and included many others in variations. 
+Studying each game in depth will definitely broaden your understanding of the Open Sicilian, as well as your understanding of chess as a whole. In addition to providing you with the latest theory, each game also includes a variety of common strategic topics, such as the initiative, positional sacrifices, weak squares, outposts, advantage of the two bishops, pawn storms, opposite side castling—but of course!, positional binds, restriction, and prophylaxis, to name a few. We hope to provide you with meaningful insight as to what it takes to manage the White side of the Open Sicilian successfully.
+We’d also like to take this opportunity to manage your expectations. We 
+cannot promise a huge advantage in every line—if that was the case then the Sicilian would certainly not be one of Black’s most reliable openings among all levels! The truth is that many of the main lines remain perfectly playable for Black, but that doesn’t mean that the well-prepared player shouldn’t be optimistic about his or her chances. We have armed you with top notch analysis as well as a repertoire of strategic plans and ideas that you will be able to rely on deep into the middlegame. As is almost always the case, when two players are equally matched in their opening knowledge it will be the player with the better understanding of the ensuing middlegame who will have the upper hand.
+While computers remain a trusted ally in the world of opening analysis, 
+it is important not to rely on the silicon beast too much. We’ve analyzed and checked each line with the strongest engines available, and while you shouldn’t hesitate to verify our analysis, we hope that you’ll avoid the novice mistake of depending on the computer’s opinion too much. 
+The ideal way to study this book is to play each move out on a physical 
+chess board—actually moving the pieces with your hand should increase your retention of the material and allow you to absorb more in the long run. 
+With that, we’d like to wish you the best of luck on your journey and we 
+sincerely thank you for giving us the opportunity to help you improve.
+ Chapter 1:  The Najdorf Variation 9Chapter 1
+ 
+The Najdorf VariationXIIIIIIIIY  
+9rsnlwqkvl-tr0  
+9+p+-zppzpp0  
+9p+-zp-sn-+0  
+9+-+-+-+-0  
+9-+-sNP+-+0  
+9+-sN-+-+P0  
+9PzPP+-zPP+0  
+9tR-vLQmKL+R0  
+xiiiiiiiiy
+To this day, the Najdorf Sicilian remains one of the most popular openings in 
+all of chess, and for good reason. Named after legendary Grandmaster Miguel Najdorf, this combative opening was a favorite choice of none other than Bobby Fischer and Garry Kasparov, as well as countless of other Grandmasters. With that in mind, we’ve decided to start our courageous journey here. 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3
+The 6.h3 variation has been 
+dubbed the Adams Attack, attributed to American master 
+Weaver Adams, who first played the line in the 1940s. 20 years later, Fischer then used it to success in games against Reshevsky, Bolbochan, and even Najdorf himself! Despite this, the variation was not considered as challenging as the more popular 6.Be3 or 6.Bg5 up until just a few years ago, when suddenly many top players started including it in their repertoire. 
+Nowadays, this line is hotly 
+contested at high levels, and has been used more than once by super-GMs Carlsen, Anand, Nakamura, Karjakin, Svidler, and Nepomniachtchi, among others. 
+In the following chapter we 
+will see White advance g2-g4 and fianchetto the light-squared bishop, which will act as a force to be reckoned with along the long diagonal. Additionally, the g-pawn will also play a vital role in many middlegames, often contributing to a kingside attack.
+Chapter 1a will be dedicated to the 
+flexible 6...e6 , Chapter 1b will feature 
+6...e5 , and Chapter 1c will include all 
+of Black’s less popular options, such as 6...Nc6  and 6...g6 , as well as the 
+Scheveningen Variation, which starts with 5...e6 .
+10 Chapter 1a:  Najdorf – 6.h3 e6Chapter 1a
+ 
+Najdorf – 6.h3 e6XIIIIIIIIY  
+9rsnlwqkvl-tr0  
+9+p+-+pzpp0  
+9p+-zppsn-+0  
+9+-+-+-+-0  
+9-+-sNP+P+0  
+9+-sN-+-+P0  
+9PzPP+-zP-+0  
+9tR-vLQmKL+R0  
+xiiiiiiiiy
+We start this chapter with Black’s most flexible response to our seemingly innocuous 6th move. This is the move you are most likely to face over the 
+board, as Black’s options are still wide open in terms of development. 
+After the natural 7.g4 , Black has mainly chosen between 7...d5 , 7...b5 , 
+7...Be7 , and 7...h6 . We will cover each of these responses in depth in six 
+instructive games, highlighting dozens of plans and ideas along the way. 
+One thing to watch out for in this chapter will be the various move order 
+transpositions in certain lines, which can get tricky and will often bear repeating. In our view, the best way to deal with any confusion is to play through each variation on a chess board several times, as this process will help you retain more information.1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3 e6 7.g4
+  Chapter 1a:  Najdorf – 6.h3 e6 11Game 1 
+Alekseev – Karjakin
+4th FIDE Grand Prix 
+Nalchik 2009
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 
+4.Nxd4 Nf6 5.Nc3 a6 6.h3 e6 7.g4 d5
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9+p+-+pzpp0 9p+-+psn-+0 9+-+p+-+-0 9-+-sNP+P+0 9+-sN-+-+P0 9PzPP+-zP-+0 9tR-vLQmKL+R0 xiiiiiiiiy  
+It is logical to start our investi -
+gation with this line, as it is a very 
+direct answer to our ambitious plan of 6.h3 and 7.g4. Black moves the d-pawn for the second time in order to create tension in the center and exploit White’s kingside expansion.8.exd5 Nxd5 
+Now Black threatens Nxc3, and 
+White should avoid the doubled c-pawns unless it comes at the price of Black’s dark-squared bishop, which can often be an advantageous trade for us.9.Nde2 
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9+p+-+pzpp0 9p+-+p+-+0 9+-+n+-+-0 9-+-+-+P+0 9+-sN-+-+P0 9PzPP+NzP-+0 9tR-vLQmKL+R0 xiiiiiiiiy
+This move has been favored by 
+most major proponents of 6.h3, such 
+as Anand, Nepomniachtchi, and Vachier-Lagrave. White defends the knight and threatens to leave Black with an isolated queen pawn by means of Nxd5.
+Less common is 9.Bd2, but it has 
+been played a number of times by strong players. We dislike it since it does not create the threat Nxd5 and allows Black to develop more freely. For instance, 9...b5 seems to be quite reasonable for Black.9...Bb4
+This is by far the most popular 
+and natural move—Black develops, puts more pressure on c3, and prevents Nxd5. Let’s take a look at some of Black’s lesser attempts for equality:
+9...Nxc3?!  leads to a slightly 
+worse endgame for Black with no chances of winning, not exactly something a Najdorf player strives for! 10.Qxd8+ Kxd8 11.Nxc3 Bd7. The main attempt to equalize, trying to neutralize White’s powerful light-squared bishop. White can fight for the advantage with simple moves: 
+78 Chapter 1a:  Najdorf – 6.h3 e6Memory Markers
+Here are reminders of some of the ideas and motifs in this chapter.
+XIIIIIIIIY 
+9rsn-wqk+-tr0 9+l+nvlpzpp0 9p+-zp-zP-+0 9+p+-zp-+-0 9-+-sNP+P+0 9+-sN-+-+P0 9PzPP+-+L+0 9tR-vLQ+RmK-0 xiiiiiiiiy   
+3. After 12.f5-f6! A powerful 
+pawn sacrifice, clearing the f5 
+square for White's knight. See the full attack unleashed in Game 3, Nepomniachtchi–Frolyanov, on page 40. XIIIIIIIIY 
+9-tr-wq-trk+0 9+-+nvlpzpp0 9p+lzpp+-+0 9+p+-+-zPP0 9-+-wQP+-+0 9zP-sN-vL-+-0 9-zPP+-zP-+0 9+-mKR+L+R0 xiiiiiiiiy   
+4. After 15.h5! Threatening  
+h5-h6 and forcing Black to play 
+e6-e5. A critical and thematic position for the Najdorf, see diagram on page 51. XIIIIIIIIY 
+9rsnl+-trk+0 9+pwq-+pzpp0 9p+-+p+-+0 9+-+-+-+-0 9-vl-wQ-+P+0 9+-sN-+-+P0 9PzPP+-zPL+0 9tR-vL-+RmK-0 xiiiiiiiiy   
+1. After 13.Qd1-d4! The most  
+active way to fight for an ad-
+vantage, preparing Bf4 and Ne4 next. See diagram on page 18.XIIIIIIIIY 
+9rsn-wqkvl-tr0 9+l+-+pzpp0 9p+-zppsn-+0 9+-+N+-+-0 9-zp-sNP+P+0 9+-+-+-+P0 9PzPP+-zPL+0 9tR-vLQ+RmK-0 xiiiiiiiiy   
+2. After 10.Nd5!? The critical  
+piece sacrifice. See diagram on 
+page 29 in Game 2, Nakamura–Ninov. 
+80 Chapter 1a:  Najdorf – 6.h3 e6Exercises
+ 
+ 
+White to play! 
+ 
+With these situations from actual games, you, as White, can practice finding 
+some of the breakthroughs, tricks, combinations, and positional opportunities that may appear in our response to the Najdorf Variation.
+Solutions to the exercises begin on page 514.
+Exercise 1
+XIIIIIIIIY 
+9-trl+-trk+0 9+p+-+-zpp0 9p+n+-+-+0 9wq-+-zpp+-0 9N+-+-+P+0 9+PzP-wQ-+P0 9P+-+-zPL+0 9+-+R+RmK-0 xiiiiiiiiy   
+Kokarev – Dvoirys
+Izhevsk 2011
+Black has just played f7-f5, seeking 
+some much-needed counterplay. How should White react? Exercise 2
+XIIIIIIIIY 
+9rsn-wqk+-tr0 9+-+-vlpzpp0 9p+P+-+-+0 9+-+p+-zP-0 9-zp-+n+-+0 9+-+-+-+P0 9PzPP+-zPL+0 9tR-vLQ+RmK-0 xiiiiiiiiy   
+Aroshidze – Fluvia Poyatos
+Barcelona 2012
+Black has survived White’s opening 
+sacrifice and everything is under control, or is it? 
+514 Solutions to the Exercises:  Chapter 1aSolutions to the Exercises
+Chapter 1:  The Najdorf Variation
+Chapter 1a: Najdorf – 6.h3 e6
+Exercise 1
+XIIIIIIIIY 
+9-trl+-trk+0 9+p+-+-zpp0 9p+n+-+-+0 9wq-+-zpp+-0 9N+-+-+P+0 9+PzP-wQ-+P0 9P+-+-zPL+0 9+-+R+RmK-0 xiiiiiiiiy   
+Kokarev – Dvoirys
+Izhevsk 2011
+Black has just played f7-f5, seek -
+ing some much-needed counterplay. 
+How should White react? 21.Bd5+! Kh8 22.f3! 
+Restricting Black’s development. 
+The bishop on c8 still has no future and Black is much, much worse.22...Bd7 
+Not 22...fxg4? 23.fxg4! Bd7 24.Nb6, 
+and White is just winning.
+Better was 22...f4 23.Qc5 Qxc5+ 
+24.Nxc5+–. The difference in piece activity is paramount.23.Nb6! 
+Not only embarrassing the bishop, 
+but also Black’s queen.23...Be8 24.b4 Qa3 25.Qc5! Bf7 26.Nd7+– 1–0 Exercise 2
+XIIIIIIIIY 
+9rsn-wqk+-tr0 9+-+-vlpzpp0 9p+P+-+-+0 9+-+p+-zP-0 9-zp-+n+-+0 9+-+-+-+P0 9PzPP+-zPL+0 9tR-vLQ+RmK-0 xiiiiiiiiy   
+Aroshidze – Fluvia Poyatos
+Barcelona 2012
+Black has survived White’s 
+opening sacrifice and everything is 
+under control, or is it? 15.c7! 
+Passed pawns must be pushed!
+15...Qd7 16.Qxd5! 
+There are certain factors that 
+give you a hint that a combination like this is possible: the advanced c7 pawn, hanging pieces along the h1-a8 diagonal, and of course the uncastled Black king.16...Qxd5 17.c8Q+ Bd8 18.Re1 
+Winning the piece back, with a 
+decisive advantage.
+18...Nd7 19.Bxe4! Rxc8 20.Bxd5+ Kf8 21.Bf4+– 
+With an extra pawn, connected 
+rooks, and the two bishops, White 
+548 ConclusionWe hope this book was as enjoyable to read as it was to write. Over the 
+process of many months we discovered many wonderful ideas and came 
+away with a better understanding of not only the Sicilian Defense, but of chess itself. Our goal was to provide you, dear reader, with a full repertoire against Black’s most combative opening, as well as an arsenal of positional and tactical motifs to boot. 
+If we could leave you with a few words of advice, we’d stress that in order 
+to truly absorb all of the material covered in this book, one must put it into practice and develop an intuitive feel for the ensuing positions. Being well-prepared is one thing, but being well-experienced is another.
+Thus, we cannot recommend enough the practical value of training games. 
+Find someone to play the Black side of a line, and challenge them to a few games to test out your knowledge. 
+We often feel ready to employ certain openings, but once we get to the board 
+we are surprised by our lack of feeling for the position. Whenever you try a new opening, it is important to first test it out in training in order to build up experience and confidence. One of the best ways of improving is to analyze your own games—find your strengths, weaknesses, and further your chess knowledge!
+We sincerely wish you all the best.
+IM Zhanibek Amanov
+FM Kostya KavutskiyConclusion XIIIIIIIIY  
+9rsnlwqkvlntr0  
+9zpp+pzppzpp0  
+9-+-+-+-+0  
+9+-zp-+-+-0  
+9-+-+P+-+0  
+9+-+-+N+-0  
+9PzPPzP-zPPzP0  
+9tRNvLQmKL+R0  
+xiiiiiiiiy
+1.e4 c5 2.Nf3
+  Index of Variations 549Index of Variations
+Chapter 1:  The Najdorf Variation
+ 
+Chapter 1a:  Najdorf – 6.h3 e6
+ 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3 e6 7.g4
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9+p+-+pzpp0 9p+-zppsn-+0 9+-+-+-+-0 9-+-sNP+P+0 9+-sN-+-+P0 9PzPP+-zP-+0 9tR-vLQmKL+R0 xiiiiiiiiy
+7...d5 8.exd5 Nxd5 9.Nde2    11 
+7...b5 8.Bg2 Bb7 9.O-O Qc7 10.g5! page  27
+7...b5 8.Bg2 Bb7 9.O-O b4!? 10.Nd5!? page  29
+7...b5 8.Bg2 Bb7 9.O-O other       37
+7...Nc6 8.Be3 Be7 9.g5 Nd7 10.h4      44
+7...Nfd7!? 8.g5!                      47
+7...Be7 8.g5 Nfd7 9.h4 b5 10.a3 Bb7 11.Be3     49
+7...h6 8.Bg2 Nc6 9.f4! Bd7 10.Be3      70
+9.f4! Qb6 10.Nb3      68
+8.Bg2 other       57
+550 Index of VariationsChapter 1b:  Najdorf – 6.h3 e5
+ 
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3 e5 7.Nde2
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9+p+-+pzpp0 9p+-zp-sn-+0 9+-+-zp-+-0 9-+-+P+-+0 9+-sN-+-+P0 9PzPP+NzPP+0 9tR-vLQmKL+R0 xiiiiiiiiy
+7...Be7 8.g4 Be6 9.Bg2        89
+8.g4 h6 9.Bg2         87
+8.g4 O-O 9.Ng3 Nbd7       88
+7...b5 8.g4      83
+7...Be6 8.g4 d5 9.exd5 Nxd5 10.Bg2     93
+8.g4 h6 9.Bg2 Nbd7 10.Be3       85
+8.g4 Nbd7 9.Bg2 Rc8 10.O-O      86
+7...h5!? 8.Bg5 Be6 9.Bxf6 Qxf6 10.Nd5       107
+8.Bg5 Be7 9.Ng3 g6 10.Bc4        102
+9.Ng3 h4 10.Nf5!?      105
+  Index of Variations 551Chapter 1c:  Najdorf – 6.h3 Various
+ 
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9+p+-zppzpp0 9p+-zp-sn-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-+P0 9PzPP+-zPP+0 9tR-vLQmKL+R0 xiiiiiiiiy
+6...Nc6 7.g4 Nxd4 8.Qxd4 e5 9.Qd3 Be6 10.f4!     123
+6...Nc6 7.g4 Nxd4 8.Qxd4 e5 9.Qd3 Be7?! 10.g5      122
+6...Nc6 7.g4 Qb6 8.Nb3        119
+6...g6 7.g4 Bg7 8.Bg2 O-O 9.Be3 Nc6 10.O-O        129
+6...g6 7.g4 Bg7 8.Bg2 h5 9.g5 Nfd7 10.Be3 Nc6 11.Qd2!       128
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3
+XIIIIIIIIY 9rsnlwqkvl-tr0 9zpp+-zppzpp0 9-+-zp-sn-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-+-0 9PzPP+-zPPzP0 9tR-vLQmKL+R0 xiiiiiiiiy
+5...e6 6.g4! e5 7.Bb5+ Bd7 8.Bxd7+ Qxd7 9.Nf5      143
+5...e6 6.g4! Nc6 7.g5 Nd7 8.Be3      140
+5...e5?! 6.Bb5+!          137
+552 Index of VariationsChapter 2:  Systems with 2...e6
+ 
+Chapter 2a:  The Kan Variation
+ 
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3
+XIIIIIIIIY 
+9rsnlwqkvlntr0 9+p+p+pzpp0 9p+-+p+-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-+-0 9PzPP+-zPPzP0 9tR-vLQmKL+R0 xiiiiiiiiy
+5...b5 6.a3 Bb7 7.g3 Nf6 8.Bg2          164
+5...Qc7 6.g3 Bb4 7.Bd2 Nf6 8.Bg2 Nc6 9.Nb3
+XIIIIIIIIY 9r+l+k+-tr0 9+pwqp+pzpp0 9p+n+psn-+0 9+-+-+-+-0 9-vl-+P+-+0 9+NsN-+-zP-0 9PzPPvL-zPLzP0 9tR-+QmK-+R0 xiiiiiiiiy   
+9...O-O 10.O-O Be7 11.f4 d6 12.g4!       155
+9...Be7 10.O-O d6 11.f4        159
+  Index of Variations 553Chapter 2b:  The Taimanov Variation
+ 
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.g3
+XIIIIIIIIY 
+9r+l+kvlntr0 9zppwqp+pzpp0 9-+n+p+-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-zP-0 9PzPP+-zP-zP0 9tR-vLQmKL+R0 xiiiiiiiiy   
+6...Nf6 7.Ndb5!                                         175
+6...d6 7.Bg2                                               175
+6...a6 7.Bg2 Nge7 8.Nb3!                          177
+6...a6 7.Bg2 Nf6 8.O-O d6 9.Re1!                  178
+6...a6 7.Bg2 Nf6 8.O-O Nxd4 9.Qxd4 Bc5 10.Bf4!      190
+6...a6 7.Bg2 Nf6 8.O-O Bc5 9.Nxc6                             194
+6...a6 7.Bg2 Nf6 8.O-O Bb4 9.Nb3                             201
+6...a6 7.Bg2 Nf6  8.O-O Be7 9.Re1 Nxd4 10.e5!          203
+6...a6 7.Bg2 Nf6 8.O-O Be7 9.Re1 O-O 10.Nxc6        201
+554 Index of VariationsChapter 2b:  The Taimanov Variation (continued)
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.g3
+XIIIIIIIIY 
+9r+lwqkvlntr0 9+p+p+pzpp0 9p+n+p+-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-zP-0 9PzPP+-zP-zP0 9tR-vLQmKL+R0 xiiiiiiiiy
+6...d6 7.Bg2 Bd7 8.O-O Qc7 9.Nb3 Nf6 10.f4 Be7 11.Be3          218
+8.O-O Nf6 9.Nb3 Be7 10.f4 b5 11.a3            217
+7.Bg2 Nf6 8.Nxc6 bxc6 9.e5!        217
+6...Nf6 7.Bg2  page  212
+6...Nge7 7.Nb3 page  212
+6...Qc7 7.Bg2 h5!? 8.h3! page  214
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 d6 6.g3  
+XIIIIIIIIY 9rsnlwqkvlntr0 9+p+-+pzpp0 9p+-zpp+-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-zP-0 9PzPP+-zP-zP0 9tR-vLQmKL+R0 xiiiiiiiiy   
+6...b5 7.Bg2  page  208
+6...Nf6 7.Bg2  page  209
+  Index of Variations 555Chapter 3:  The Classical Variation
+ 
+ 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bc4
+XIIIIIIIIY 
+9rs+lwqkvl-tr0 9zpp+-zppzpp0 9-+nzp-sn-+0 9+-+-+-+-0 9-+LsNP+-+0 9+-sN-+-+-0 9PzPP+-zPPzP0 9tR-vLQmK-+R0 xiiiiiiiiy
+6...e6 7.Be3 a6 8.Bb3 Na5 9.f4 b5 10.e5!         227
+8.Bb3 Qc7 9.f4 Na5                        229
+6...e6 7.Be3 Be7 8.Bb3 O-O
+9.f4 Na5 10.O-O       233
+ 9.f4 Nxd4 10.Qxd4!? Ng4 11.Bd2       239
+ 9.f4 Bd7 10.Qe2!                     240
+ 9.f4 a6 10.O-O Nxd4 11.Bxd4 b5 12.e5!     243
+  10.O-O Qc7 11.f5         242
+  10.O-O Bd7 11.f5!        242
+6...Qb6 7.Nb3 e6 8.Bf4 Ne5 9.Be2 Be7 10.Be3 Qc7 11.f4         251
+ 9.Be2 a6 10.g4!?                    261
+9.Be2 Bd7 10.Qd2                    257
+7.Nb3 a6 8.O-O e6 9.a4! Qc7 10.a5                      249
+6...e5 7.Nf5!                                                          274
+6...Na5 7.Bb5+ Bd7 8.Bxd7+!? Qxd7 9.Bg5!       266
+6...a6?! 7.Nxc6 bxc6 8.e5!                    267
+6...g6 7.Nxc6 bxc6 8.e5!                       268
+6...Bd7 7.Nxc6!? bxc6?! 8.O-O          270
+7.Nxc6!? Bxc6 8.Qe2            271
+556 Index of VariationsChapter 4:  The Dragon Variation
+ 
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9zpp+-zpp+p0 9-+-zp-snp+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-vL-+-0 9PzPP+-zPPzP0 9tR-+QmKL+R0 xiiiiiiiiy   
+6...a6 7.Qd2!       321
+6...Bg7 7.f3 a6 8.Qd2 Nbd7 9.g4 b5 10.h4                    324
+ 10.O-O-O Bb7 11.h4       324
+8.Qd2 other     323
+6...Bg7  7.f3 Nc6 8.Qd2 h5 9.O-O-O Bd7 10.Bc4 Rc8 11.Bb3     285
+8.Qd2 Bd7 9.O-O-O Rc8 10.g4                  287
+6...Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O Be6 10.Kb1                297
+6...Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O Bd7 10.g4!  
+ 10...Rc8 11.h4 h5 12.gxh5 Nxh5 13.Rg1!           293
+ 10...Rc8  11.h4 Ne5 12.Be2!     291
+ 10...a6?! 11.h4 b5 12.h5      288
+ 10...Qa5?! 11.Nb3!            289
+ 10...Ne5 11.h4                289
+6...Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O Nxd4 10.Bxd4 Be6 11.Kb1!  
+ 11...Qa5?! 12.Nd5! page  298
+ 11...Nd7 12.h4!       298
+ 11...a6 12.g4         300
+ 11...Qc7 12.h4      300
+6...Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O d5 10.Qe1!?  
+ 10...e5 11.Nxc6 bxc6 12.exd5 cxd5 13.Bg5!     312
+ 12.exd5 Nxd5 13.Bc4 Be6 14.Kb1!    315
+ 10...e6 11.h4            308
+  Index of Variations 557Chapter 5:  The Accelerated Dragon
+ 
+ 1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4!
+XIIIIIIIIY 
+9r+lwqkvlntr0 9zpp+pzpp+p0 9-+n+-+p+0 9+-+-+-+-0 9-+PsNP+-+0 9+-+-+-+-0 9PzP-+-zPPzP0 9tRNvLQmKL+R0 xiiiiiiiiy   
+5...Nf6 6.Nc3 d6 7.Be2 Nxd4 8.Qxd4 Bg7 9.Be3 O-O 10.Qd2 
+ 10...Be6 11.O-O Qa5 12.b3!        339
+ 10...Bd7?! 11.O-O                 338
+ 10...Ng4 11.Bxg4 Bxg4 12.Bd4      338
+ 10...a5!? 11.Rd1!                 345
+5...Bg7 6.Be3 Nf6 7.Nc3 Ng4!? 8.Qxg4 Bxd4?! 9.Bxd4 Nxd4 10.O-O-O! page 351
+5...Bg7 6.Be3 Nf6 7.Nc3 Ng4!? 8.Qxg4 Nxd4 9.Qd1 Ne6 10.Rc1! page  354
+5...Bg7 6.Be3 Nf6 7.Nc3 Ng4!? 8.Qxg4 Nxd4 9.Qd1 Nc6 10.Qd2   352
+5...Bg7 6.Be3 Nf6 7.Nc3 Ng4!? 8.Qxg4 Nxd4 9.Qd1 e5 10.Nb5!? page  352
+5...Bg7 6.Be3 Nf6 7.Nc3 O-O 8.Be2 d6 9.O-O Bd7 10.Qd2            365
+5...Bg7 6.Be3 Nf6 7.Nc3 O-O 8.Be2 b6!? 9.O-O Bb7 10.Nxc6!?     361
+5...Bg7 6.Be3 Nf6 7.Nc3 O-O 8.Be2 Nxd4 9.Bxd4 d6 10.O-O        363
+1.e4 c5 2.Nf3 g6 3.d4 Bg7 4.c4         334
+558 Index of VariationsChapter 6:  The Sveshnikov & Cousins  
+Chapter 6a:  The Sveshnikov Variation
+ 
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3
+XIIIIIIIIY 
+9r+lwqkvl-tr0 9+p+-+pzpp0 9p+nzp-sn-+0 9+-+-zp-vL-0 9-+-+P+-+0 9sN-sN-+-+-0 9PzPP+-zPPzP0 9tR-+QmKL+R0 xiiiiiiiiy   
+8...Be7?! 9.Nc4!      p376page  380
+8...Be6 9.Nc4 Rc8 10.Bxf6   p376page  380
+8...b5 9.Nd5 Qa5+ 10.Bd2 Qd8 11.Bd3  p379page  383
+8...b5 9.Nd5 Be7 10.Bxf6 Bxf6 11.c4 
+XIIIIIIIIY 9r+lwqk+-tr0 9+-+-+pzpp0 9p+nzp-vl-+0 9+p+Nzp-+-0 9-+P+P+-+0 9sN-+-+-+-0 9PzP-+-zPPzP0 9tR-+QmKL+R0 xiiiiiiiiy   
+11...b4 12.Nc2 O-O 13.g3    p392page  396
+11...b4  12.Nc2 a5 13.g3   p388page  392
+11...b4  12.Nc2 Rb8 13.b3   p389page  393
+11...other     p381page  385
+  Index of Variations 559Chapter 6b:  The Kalashnikov and Löwenthal  Variation
+ 
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e5 5.Nb5 d6 6.c4
+XIIIIIIIIY 
+9r+lwqkvlntr0 9zpp+-+pzpp0 9-+nzp-+-+0 9+N+-zp-+-0 9-+P+P+-+0 9+-+-+-+-0 9PzP-+-zPPzP0 9tRNvLQmKL+R0 xiiiiiiiiy   
+6...a6 7.N5c3 Be6?! 8.Nd5         p405page  409
+6...Be6 7.N1c3 a6 8.Na3        p405page  409
+6...Be7 7.N1c3 a6 8.Na3 f5!? 9.exf5 Bxf5    p405page  409
+6...Be7 7.N1c3 a6 8.Na3 Nf6 9.Be2 O-O 10.O-O Be6 11.Be3 Rc8 12.Rc1 p408page 412
+6...Be7 7.N1c3 a6 8.Na3 Be6 9.Be2 Bg5 10.O-O Bxc1 11.Rxc1 p415page  419
+6...Be7 7.N1c3 a6 8.Na3 Be6 9.Be2 Nd4 10.O-O          p414page  418
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e5 5.Nb5 a6 6.Nd6+ Bxd6 7.Qxd6 p420page 424
+560 Index of VariationsChapter 7:  Minor Sicilians
+ 
+Chapter 7a:  The Four Knights Variation
+ 
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3
+XIIIIIIIIY 
+9rsnlwqkvl-tr0 9zpp+p+pzpp0 9-+-+psn-+0 9+-+-+-+-0 9-+-sNP+-+0 9+-sN-+-+-0 9PzPP+-zPPzP0 9tR-vLQmKL+R0 xiiiiiiiiy
+5...Nc6 6.Ndb5 Bb4 7.a3! Bxc3+ 8.Nxc3 d5 9.exd5 exd5 10.Bd3 p439page  443
+5...Nc6 6.Ndb5 Bb4 7.a3! Bxc3+ 8.Nxc3 d5 9.exd5 Nxd5 10.Bd2!? p437page  441
+5...Nc6 6.Ndb5 Bc5 7.Bf4       p459page 463
+5...Bb4 6.e5!  p450page  454
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Bb4 6.Ndb5 p449page  453
+  Index of Variations 561Chapter 7b:  Rare Sicilians
+ 1.e4 c5 2.Nf3
+XIIIIIIIIY 
+9rsnlwqkvlntr0 9zpp+pzppzpp0 9-+-+-+-+0 9+-zp-+-+-0 9-+-+P+-+0 9+-+-+N+-0 9PzPPzP-zPPzP0 9tRNvLQmKL+R0 xiiiiiiiiy
+2...Nc6 3.d4 cxd4 4.Nxd4 Qb6 5.Nb3 Nf6 6.Nc3 e6 7.Qe2!    p472 page 476
+2...Nc6 3.d4 cxd4 4.Nxd4 Qb6 5.Nb3 e6 6.Nc3 a6 7.Bf4!   p472 page 476
+2...Nf6 3.Nc3 d5 4.exd5 Nxd5 5.Bb5+ Bd7 6.Ne5!      p486 page 490
+2...Nf6 3.Nc3 d5 4.exd5 Nxd5 5.Bb5+ Nc6 6.O-O        p485 page 489
+2...Nf6 3.Nc3 Nc6 4.d4 d5!? 5.exd5 Nxd5 6.dxc5 Nxc3 7.Qxd8+ p482 page 486
+2...b6 3.d4 cxd4 4.Nxd4 Bb7 5.Nc3 a6 6.g3      p495 page 499
+2...b6 3.d4 cxd4 4.Nxd4 Bb7 5.Nc3 other        p493 page 497
+2...a6 3.Nc3 e6 4.d4 b5 5.d5! Bb7 6.Be2        p500 page 504
+2...a6 3.Nc3 e6 4.d4 b5 5.d5! d6?! 6.dxe6!N    p499 page 503
+2...a6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 e5 6.Nf5!    p498 page 502
+562 BibliographyBooks:
+Lubomir Ftacnik - Grandmaster Repertoire 6 - The Sicilian Defence
+Zaven Andriasyan - Winning with the Najdorf SicilianKiril Georgiev, Atanas Kolev - The Sharpest SicilianJohan Hellsten - Play the Sicilian KanJames Rizzitano - Chess Explained, The Taimanov SicilianAlex Yermolinsky - Chess Explained - The Classical SicilianJohn Nunn, Joe Gallagher - Beating the Sicilian 3David Vigorito - Chess Developments - The Sicilian DragonVassilios Kotronias - Grandmaster Repertoire 18 - The Sicilian SveshnikovMatthieu Cornette, Fabien Libiszewski - The Complete KalashnikovGrigory Bogdanovich - Play 2...Nf6! in the Sicilian
+Chessbase DVDs:
+Alejandro Ramirez - The Sicilian Taimanov-ScheveningenVictor Bologan - Beating the SicilianPeter Heine Nielsen - The Sicilian Dragon 2
+Electronic Resources:
+ChessbaseMega Database 2014
+Engines:
+Houdini 4Komodo 8Stockfish 5Bibliography 

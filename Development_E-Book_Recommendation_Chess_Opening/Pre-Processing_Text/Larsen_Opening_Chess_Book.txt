@@ -1,0 +1,830 @@
+ 
+ 
+  www.everymanchess.com
+Cyrus Lakdawalamove by move
+The Nimzo-Larsen attack
+ 
+ 
+   
+  
+ 
+ About the Author 
+  
+  
+ 
+Cyrus Lakdawala  is an International Master, a former  National Open an d American Open 
+Champion, and a six-time Stat e Champion. He has been teac hing chess for over 30 years, 
+and coaches some of the top junior players in the US. 
+ 
+Also by the Author:  
+Play the London System  
+A Ferocious Opening Repertoire  
+The Slav: Move by Move  
+1...d6: Move by Move  
+The Caro-Kann: Move by Move  
+The Four Knights: Move by Move  
+Capablanca: Move by Move  
+The Modern Defence: Move by Move  
+Kramnik: Move by Move  
+The Colle: Move by Move  
+The Scandinavian: Move by Move 
+Botvinnik: Move by Move  
+ 
+ 
+   
+ 
+ 
+  
+ 
+ Contents 
+  
+  
+ 
+  About the Author  3 
+  Series Foreword  5 
+  Bibliography  6 
+  Introduction  7 
+ 
+ 1 Nimzo-Larsen vs. Classical set-up 18 
+ 2 Lines with ...e7-e5 and ...d7-d6 73 
+ 3 The Beginner’s Variation 146 
+ 4 Reversed Open Sicilian 192 
+ 5 Reversed Nimzo-Indian 225 
+ 6 Réti set-ups 258 
+ 7 Reversed London, Torre and Trompowsky 285 
+ 8 The Trompowsky Nimzo-Larsen 329 
+ 9 Nimzo-Larsen vs. Dutch 346 
+ 10 Odds and Ends 360 
+   Index of Variations  411 
+  Index of Games  415 
+ 
+ 
+   
+ 
+5  
+  
+ 
+ Series Foreword 
+  
+  
+ 
+Move by Move  is a series of opening books which uses a question-and-answer format. One 
+of our main aims of the series is to replicat e – as much as possible – lessons between chess 
+teachers and students. 
+All the way through, readers will be challenged  to answer searching questions, to test 
+their skills in chess openings and indeed in other key aspects of the game. It’s our firm be-
+lief that practising your skills like this is an excellent way to study chess openings, and to 
+study chess in general. 
+Many thanks go to all those who have been kind  enough to offer inspiration, advice and 
+assistance in the creation of Move by Move . We’re really excited by this series and hope that 
+readers will share our enthusiasm. 
+ 
+John Emms, 
+Everyman Chess 
+ 
+ 
+   
+ 
+7  
+  
+ 
+ Introduction 
+  
+  
+ 
+ 
+W________W  
+[rhb1kgn4]  
+[0p0p0p0p]  
+[WDWDWDWD]  
+[DWDWDWDW]  
+[WDWDWDWD]  
+[DPDWDWDW]  
+[PDP)P)P)]  
+[$NGQIBHR]  
+W--------W 
+In the Prajnaparamita Sutra, the Buddha asks : “Can you count, compare, measure, con-
+ceive, imagine, perceive, touch or divide the principle of spac e? Can you approach, reach or 
+attain space? Can space even be described as  infinite?” When you begin a chess game with 
+1 b3, your opponents soon discover that they go to war against a ghost and engage in bat-
+tles against empty space. If the universe is infinite, then it stands to reason that every pos-
+sibility – both physical and imagined – must  find expression in a manifestation some-
+where out there. The Nimzo-Larsen Attack is an opening which fits this theory. 
+Chess is that strange realm where dimensions of form and that of imagination interre-
+late and mesh. We play 1 b3, a harmless li ttle move, allowing Black a blank canvas, with 
+scope to set up any way he or she desires. On  our very first move we challenge the forces of 
+orthodoxy, who claim that we must enter a trendy theoretical li ne to claim our birthright 
+White advantage. In fact, we cede this point and instead engage in one-on-one combat on 
+raw chess skill, virtually circumventing the entire opening phase (well, apart from some of 
+the super-sharp 1...e5 lines of the first three ch apters in this book!). After 1 b3, prepare to 
+enter realms where book knowledge grows vagu e, and where we must survive only by su-
+perior adaptability to the constantly shifting structures. In fact, our entire association with 
+the opening phase (with the exception of a few forcing variations) grows so tenuous that it 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+8 virtually disappears. With our first move we give license to free reign on creativity—both 
+ours and our opponent’s. Immediately after our first move, our future appears as a vacant 
+lot. It is actually our opponent’s response whic h tells us what to build on that lot. We make 
+our way through strange terrain of multit udinous possibilities, diverse futures. 
+The Nimzo-Larsen isn’t as much an opening as it is a composite of other openings and 
+structural possibilities. In hypermodern fashion – a necessary article of faith for our line – 
+we often allow Black to take over the centre with ...e7-e5 and ...d7-d5, only to attack it later 
+from the sides, and especially pressure it fr om the vantage point of our fianchettoed b2-
+bishop. Conquest of the central dark squares can be a key criterion of the Nimzo-Larsen. 
+ 
+We are our own Messiah  
+The tendency these days is to look for an open ings messiah, order his or her books and then 
+faithfully practice the holy teachings. We di saffected Nimzo-Larseners, on the other hand, 
+are sick and tired of waiting around. So we as sume the role of our own openings messiah. 
+This book is meant to be a block of suggest ions and ideas, not commands to be followed. 
+Most of us tend to play better within a famili ar structure. When you open with 1 b3!, more 
+than likely you alone will be within the famili ar after a dozen or so moves, while your op-
+ponents will wander about, strangers to the al ien environments which tend to arise from 
+the Nimzo-Larsen. 
+I view my books as a joint venture in which yo u, the reader, and I participate. So I never 
+accept an opening book contract unless I am willing to play the opening myself. I expected 
+to take a hit in rating when I first took up 1 b3. In fact in my very first game, I groaned in-wardly when I barely drew with a player rate d 450 points lower. Then, as I studied and un-
+derstood the opening more, events began to turn around. 
+In this book you are offered a host of idiosync ratic ideas and flights of fancy – over safer, 
+more solid lines – and I encourage readers to follow their imaginations when playing 1 b3. 
+At this writing, my score with the opening st ands at 25 wins, four draws and a loss, from 
+an opposition rated around a 2250 average – a far higher percentage than normal scores 
+with my main 1 Ìf3 or 1 d4 lines. Out of these ga mes I achieved very few “+=” positions 
+after the opening, and in most games my opponents equalized (and sometimes stood bet-
+ter!). Yet their troubles arose from the middlegame on. So what was the game changer? Opponents tended to react poorly to the bizarri fication of the positi ons, ate up too much 
+time on their clocks and bega n to grow disoriented, which in turn, induced inexplicable 
+errors from such strong players. Don’t unde restimate the weaponization of the outlandish! 
+ 
+ 
+   
+ 
+Introduction 
+9 W________W  
+[rhW1kgn4]  
+[0p0W0p0p]  
+[WDWDWDWD]  
+[DWDpDbDW]  
+[WDWDPDWD]  
+[DPDWDPDW]  
+[PGP)WDP)]  
+[$NDQIBHR]  
+W--------W 
+In this position, the Nimzo-Larsen Blackmar-Diemer Gambit, I had White against GM 
+Tamaz Gelashvili at the National Open rapid chess championship. The opening went 1 b3 
+d5 2 Íb2 Í g4 3 f3!? Íf5 4 e4!?. Now my scary strong opponent, rated USCF 2668, later 
+outplayed me but I hung on to the draw anyway , mainly because he burned so much of his 
+clock dealing with a completely new set of opening problems, whereas I banged out my moves quickly. Why? Because we cover this po sition in Chapter Seven . So what is bizarre 
+and unfamiliar to the opponent is merely routine, familiar ground for us, the Nimzo-
+Larsen clan. 
+ 
+The Division of the Book  
+The book is, in a sense, dissected into two gi gantic chapters: 1 b3 e5 lines, and 1 b3 and 
+everything else lines! Chapters  One, Two and Three, the largest in the book, cover the con-
+frontational 1...e5 variations, which you do in deed need to study and, yes, even memorize 
+parts of, since the lines tend to be forcing and quite mathematical. It is in these lines that 
+we are vulnerable to home prep and a crafty  opponent’s computer analysis, so we must 
+work hardest here in the book. Nevertheless, ther e is still plenty of room for imagination to 
+frolic. Then we have Chapters Four through Ten, 1 b3 versus everything else. These lines 
+tend not to engage in early confrontation, and therefore allow us to do some really strange 
+things, which I, your enabler, encourage throughout the book! 
+ 
+The History of the Nimzo-Larsen  
+In the 1920s and 30s, Aaron Nimzowitsc h scored over 80% with 1 b3, and 1 Ìf3, 2 b3. Sur-
+prisingly, he played the latter 1 Ìf3 move order far more often than the purist 1 b3 ver-
+sion. He mostly got reversed Nimzo-Indian posi tions, as examined in  Chapter Five, which 
+he understood more deeply than  virtually all his opponents. 
+Larsen, too, did very well with his namesake opening, scoring an impressive 80%, main-
+ly with the 1 b3 move order. Yet, paradoxica lly, our opening was hit with a terrible setback 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+10 setback from a public relations standpoint, when then world champi on Boris Spassky dis-
+mantled our hero, Larsen in a mere 17 moves in a high-stakes game at the USSR vs. Rest of 
+the World match in Belgrade, 1970. It was painfu l to watch and not much of a contest. On 
+the one side we observed a salivating cat and on the other a quaking hamster. Somehow 
+this massacre embedded itself in our collect ive consciousness and now most players asso-
+ciate 1 b3?! with the Larsen-Spassky debacle. I have cunningly hidden this game, embedded somewhere in the notes of the book and refuse  to annotate this embarrassment – unless, 
+of course, I end up writing Spassky: Move by Move ! (In which case I would no doubt extol 
+and wax poetically over the glories of Spassky’s sumptuous attacking skills!) 
+Fischer, in an experimental mood, took up the opening’s ma ntle in the early 70s, rack-
+ing up a perfect 5-0 score, an act which inje cted our Nimzo-Larsen spirits with a consider-
+able boost of confidence – although most pl ayers didn’t attribute Fischer’s success to the 
+powers of the Nimzo-Larsen itself, since at th e time Fischer slaughtered opponents at un-
+heard-of margins with every opening. Then th ere followed four decades of dormancy – a 
+lengthy convalescence period (to recover from the Larsen-Spassky game!) – where our opening was left untouched, like rotten cheese past its expiration date, by the upper eche-
+lon of chess. 
+ 
+A New, Hallucinatory Era for 1 b3!  
+Fortunately, a violin doesn’t lose its tone if le ft unplayed by a maestro for a long period of 
+time. In the present, our hibe rnating opening awakens to its old power and glory, none the 
+worse for its disuse. Today, we arrive upon th e threshold of a new era for our opening. Ar-
+menian GM Tigran L. Petrosian and Georgian  super-GM – rated over 2700 – Baadur Jobaba 
+play 1 b3 regularly and with success. Modern GM s interpret the opening in a kind of high-
+end crazy formulation, inspiring a new generati on of Nimzo-Larseners. Their play sparkles 
+with anticipatory, child-like freshness, as we  try and guess (almost always incorrectly!) 
+their coming moves. 
+When the Duke of Wellington was asked what his orders were in case he was killed in 
+the Battle of Waterloo, he responded: “To do like  me!” And so now we steal a glimpse of our 
+top general’s modern interpreta tions of our line. (I sneaked in a diagram of one of my 
+games as well. Okay, fine, I’m not included in  the list of top Nimzo-Larsen generals, but I 
+certainly qualify as newly enlisted  zealot in our war!) Here is just a taste of some of the po-
+sitions examined in the coming chapters. In ea ch case White submerges himself in fanciful 
+notions and dark alchemies and, in each ca se, White, the Nimzo-La rsener, functions and 
+pushes forward upon the wind of a fundamenta lly optimistic premise: I will survive the 
+complications and you, my bewildered opponent , won’t – and in each case they were cor-
+rect! Behold that hallucinatory, strategy-les s netherworld, called the Nimzo-Larsen, where 
+all futures are possible: 
+ 
+ 
+   
+ 
+Introduction 
+11 W________W  
+[rDb1W4kD]  
+[Dp0pDp0p]  
+[pDngWhWD]  
+[DWDW0WDW]  
+[WDPDWDPD]  
+[DPDW)WDW]  
+[PGN)B)W)]  
+[$WDQIWHR]  
+W--------W 
+Petrosian-Vishnu (Game 25) 
+W________W  
+[rhW1kgW4]  
+[0p0Whp0W]  
+[WDWDpDWD]  
+[DWDpDb)p]  
+[WDWDWHW)]  
+[DPHW)PDW]  
+[PGP)WDWD]  
+[$WDQIBDR]  
+W--------W 
+Jobava-Yu (Game 45) W________W  
+[rDW1kgW4]  
+[0pDnDp0W]  
+[WDpDphW0]  
+[DWDpDbDW]  
+[WDWDW)PD]  
+[DPHW)NDP]  
+[PGP)WDWD]  
+[$WDQIBDR]  
+W--------W 
+Jobava-Ma (Game 48) 
+W________W  
+[rhW1kgn4]  
+[0b0pDp0p]  
+[W0WDpDWD]  
+[DWDWDWDW]  
+[WDWDWDWD]  
+[DPHW)WDW]  
+[PGP)W)P)]  
+[$WDQIBHR]  
+W--------W 
+Jobava-Giri (Game 55) 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+12 W________W  
+[rhW1kDW4]  
+[0pDWDp0b]  
+[WDpgWhW0]  
+[DWDpDWDW]  
+[WDWHWDPD]  
+[DPHW)WDW]  
+[PGW)B)W)]  
+[$WDQIWDR]  
+W--------W 
+Kharlov-Ernst (Game 43) W________W  
+[WDr1W4kD]  
+[Dp0Wgp0p]  
+[pDWDWhWD]  
+[DWDPDbDW]  
+[WDWGpDPD]  
+[DPHW)WDW]  
+[PDQ)B)W)]  
+[$WDWIWDR]  
+W--------W 
+Lakdawala-Krishnan (Game 33) 
+ 
+A quick glance at these diagrams and one would believe the book was titled: The Grob: 
+Move by Move ! The modern interpretation of the Nimzo-Larsen is a virtual Ìc3/g2-g4-fest! 
+To the naked eye, it appears as if White’s forc es in the above positi ons lie about in disor-
+derly array, like obese sunbathing tourists littered about the beach. In each case, White 
+unscrews the lid, and allows an archy and unblocked creativity to pour forth and splash as 
+it may. 
+Conversely, watch how Nimzowitsch’s greate r understanding of the structure guides 
+him to the win in the following game: 
+ 
+  
+Game 1 
+A.Nimzowitsch-H.Johner  
+Exhibition game, Bern 1931   
+1 Ìf3  
+  
+Question:  Doesn’t the Nimzo-Larsen begin with 1 b3 - ? 
+  
+Answer:  Technically, yes, but some players start the game with 1 Ìf3 and 2 b3. In this book, 
+the vast majority of the games do indeed begin with 1 b3!. 
+  
+Question:  Why would White want to avoid the 1 b3 move order? 
+  
+ 
+ 
+   
+ 
+Introduction 
+13 Answer:  It has the effect of cutting out Black’ s sharpest and most theoretical response 
+1...e5, whose lines we covered for nearly half the book. Which means it is also possible to 
+play the Nimzo-Larsen à la carte. 1...Ìf6 2 b3 
+W________W  
+[rhb1kgW4]  
+[0p0p0p0p]  
+[WDWDWhWD]  
+[DWDWDWDW]  
+[WDWDWDWD]  
+[DPDWDNDW]  
+[PDP)P)P)]  
+[$NGQIBDR]  
+W--------W 
+There we go. Radical stuff back in 1931. Th e hypermodern’s philosophy: a preposterous 
+notion (allow the opponent to take control of the centre, to later attack it from the wings) 
+ceases to bear that label if it can also prove its effectiveness. Sometimes we play a shocking 
+move (yes, 2 b3 was shocking in 1931), not for it s inherent power, as much as for the sheer 
+exhilaration of it. 
+2...d5  
+In the 1920s and 30s virtually every one tossed in the classical ...d7-d5 response at some 
+point or another. All but a few radical hypermod erns challenged the theory that physically 
+controlling the centre with your pawns was always a positive venture. 
+3 Íb2 c5 4 e3 Ìc6 5 Íb5 
+Reaching a reversed Nimzo-Indian, which we cover extensively in Chapter Five. 
+5...Í g4 
+Not a great line for Black, who usually gets ro bbed of the bishop pair  in this version. We 
+cover 5...Ë c7, 5...Í d7 and 5...a6 responses in Chapter Five. 
+6 Íxc6+ 
+  
+Question:  Should White wait for ...a7-a6 before swapping on c6? 
+  
+Answer:  Not normally. White often takes on c6 unprovoked in this line. However, he can 
+delay by tossing in 6 h3 Íh5?! (I think this natural move almost gives White a winning po-
+sition; I suppose Black can change his mind and play 6... Íd7 which would hand White a 
+not terribly useful tempo with h2-h3, whereas 6... Íxf3 7 Íxc6+ bxc6 8 Ëxf3 gives White a 
+pleasant structural edge without the cost of the bishop pair) 7 g4 Íg6 8 Ìe5 Îc8 9 h4! 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+14 (White herds pawns to make the structure pliable to his wishes, threatening 10 h5 Íe4 11 
+f3) 9...d4 (9...h5? 10 Ìxg6 fxg6 11 g5 Ìd7 is strategically nauseati ng for Black, who nurses 
+an awful pawn structure on the kingside, is weak on the light squares, and has handed 
+White the bishop pair – normally Black’s birthright in the r eversed Nimzo-Indian) 10 Ìxc6 
+bxc6 11 Ía6 Îb8 12 h5 Í e4 13 f3 with a clear structural su periority to White, E.Dizdarevic-
+I.Kinez, Pula 1996. 
+6...bxc6 7 h3 Íxf3?! 
+Now White has damaged the opposing queenside for free. At least 7... Íh5 8 g4 (White 
+can also play more quietly with 8 d3 h6 9 Ìbd2) 8...Í g6 9 Ìe5 Ìd7 10 Ìxg6 hxg6 gets 
+Black an open h-file in exchange for the bishop. 
+8 Ëxf3 Ëc7 
+Recognizing the need to fight for e5. 
+9 d3 
+W________W  
+[rDWDkgW4]  
+[0W1W0p0p]  
+[WDpDWhWD]  
+[DW0pDWDW]  
+[WDWDWDWD]  
+[DPDP)QDP]  
+[PGPDW)PD]  
+[$NDWIWDR]  
+W--------W 
+9...e6  
+  
+Question:  Why didn’t Black play 9...e5 instead? 
+  
+Answer:  It violates the principle: Avoid fixing pawns on the same  colour as your remaining 
+bishop.  White seizes the advantage after 10 Ëg3 Ìd7 11 e4 Î b8 12 Ìc3 Ë d6. And 12...d4?! 
+13 Ìb1! is even better for White, who now controls c4, may later target c5, and is free to 
+consider both f2-f4 and c2-c3 pawn breaks. 
+10 Ìc3  
+  
+Question:  Why can’t White win a pawn here? 
+  
+Answer:  It isn’t worth the loss of initiative after 10 Íxf6?! gxf6 11 Ëxf6 Îg8 12 Ë f3 Íg7 13 
+c3 a5. 
+10...Í d6 11 Ìa4  
+ 
+ 
+   
+ 
+Introduction 
+15 Giving notice to Black that c5 is a weak pawn. 
+11...Í e5 
+Reminding White that control over e5 is a pr ivilege, not a right. Swaps hurt Black, but 
+he had to do something about the b2-bishop’s eternal gaze upon f6. 
+  
+Question:  Can Black dissolve the weakness with 11...c4 - ? 
+  
+Answer:  He merely trades one problem for another after 12 Íxf6 gxf6 13 dxc4 dxc4 14 0-0 
+f5 15 e4 fxe4 16 Ëxe4 cxb3 17 cxb3, when Black’s pawns – especially c6 – are weak, and his 
+king looks somewhat insecure as well. 
+12 Íxe5 Ëxe5 13 0-0 Ìd7 14 Ëe2!? 
+Nimzowitsch wants to slide his queen over to the other side of the board in search of 
+targets. Today’s GMs would undoubtedly play 14 c4, fixing the target on c5. 14...0-0 15 Ëd2!? f5 
+Black hopes to get something cooking on the kingside to distract White from the other 
+wing. 15...a5!? was also possible, keeping White’ s queen off that square, albeit at the cost 
+of a tempo. 
+16 Ëa5! 
+With this move, Nimzo sends his opponent a message. Not a loud one, but enough to 
+indicate just who is in control of the position. 16...Î fb8 
+Instinct, the more powerful force, generally overrides logic in time s of crisis. With his 
+last move Black decides to play for high stakes, refusing to play a defensive move like 16...Ë d6. 
+W________W  
+[r4WDWDkD]  
+[0WDnDW0p]  
+[WDpDpDWD]  
+[!W0p1pDW]  
+[NDWDWDWD]  
+[DPDP)WDP]  
+[PDPDW)PD]  
+[$WDWDRIW]  
+W--------W 
+  
+Exercise (critical decision/calculation):  Calculate the ramifications of 17 Ìxc5 Îb5  
+18 Ìxd7 Ëxa1. Sinister emanations pour forth from c5. Can White take it or not? 
+  
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+16 Answer:  White has seen deeper into th e position and the move works. 
+17 Ìxc5!!  
+White’s knight frolics about in high spirit s, the way your dog acts when you return 
+home from a trip. In such positions our likes and dislikes are discarde d variables. In math-
+based calculations, there is but a single solution to the equation. 
+17...Î b5 18 Ìxd7 Ëxa1 19 Ëc7! Ëc3 20 a4!  
+Nimzo implements an inestima bly crucial component to White’s sequence. The rook is 
+chased to a tactically vulnerable square. Th ose who were aggressors suddenly find them-
+selves in the role of the assailed. It becomes clear that defence of Black’s offside rook will 
+prove to be an enormous drain on his resources. 
+20...Î b4 
+A move which attests to Black’s extreme level of desperation. For now, the rook loafs 
+about and runs idle, like a computer monitor on sleep mode. Instead: 
+a) 20...Î a5? (this awkward move is slow death for Black) 21 d4! h6 22 Ìe5 Êh8 23 Ìg6+ 
+Êg8 24 Ìf4 Îe8 25 Ìh5 mates. Veni vidi vici. In this way White breaks up an oversized, 
+unmanageable whole into scattered, weakened  chunks. There is no way to protect g7. 
+b) 20...Ë a5? 21 Ëxc6 Îbb8 22 Ìxb8 Îxb8 23 Ë xe6+ Êh8 24 Ë xf5. White continues to 
+siphon off extraneous black pawns and regains the exchange with four pawns’ interest. 
+21 Ìe5!  
+W________W  
+[rDWDWDkD]  
+[0W!WDW0p]  
+[WDpDpDWD]  
+[DWDpHpDW]  
+[P4WDWDWD]  
+[DP1P)WDP]  
+[WDPDW)PD]  
+[DWDWDRIW]  
+W--------W 
+Nimzo strangles Johner’s joy with each pa ssing move. He threatens c6, as well as Ëf7+, 
+followed by Ëxe6. White’s attacking queen and knight team swim into the nervous black 
+king’s line of sight. 21...Î f8 
+Or 21...Êh8 22 Ìf7+ Êg8 23 Ë e7! Îbb8 (23...Î ab8 24 Ìd8! Îxd8 25 Ëxd8+ Êf7 26 
+Ëa5! c5 27 Ëc7+ Êf6 28 f4 Ëxc2 29 Îf3! Îxb3 30 Î g3 g6 31 Ë xh7 is curtains for Black’s 
+king) 24 Ëxe6 Ëf6 (24... Îe8?? walks into the smothered mate combination every Russian 
+first grade child knows: 25 Ìh6+ Êh8 26 Ë g8+ Îxg8 27 Ìf7 mate) 25 Ìh6+ Êf8 26 Ëxf6+ 
+ 
+ 
+   
+ 
+Introduction 
+17 gxf6 27 Ìxf5 and White should convert with three pawns for the exchange. 
+22 Ìxc6  
+Threatening Ìe7+ with a discovered attack  on Black’s loose queen. 
+22...Ê h8 
+“This too shall pass,” thinks Black’s king of the new wave of White’s attack. Unfortu-
+nately, he is mistaken and his position reache s terminal proportions. Johner by now surely 
+realizes he is caught under the thra ll of a power greater than his own. 
+W________W  
+[WDWDW4Wi]  
+[0W!WDW0p]  
+[WDNDpDWD]  
+[DWDpDpDW]  
+[P4WDWDWD]  
+[DP1P)WDP]  
+[WDPDW)PD]  
+[DWDWDRIW]  
+W--------W 
+Black nurtures a final, lone hope for surviv al – a daydream more than a hope. But his 
+last move overlooks a lethal potential. We sens e a foreboding, an absolute finality on the 
+horizon, as a cat’s face appears to the goldfish in the bowl. 
+  
+Exercise (combination alert):  Find one move and  
+you force Black’s immediate resignation. 
+  
+Answer:  Double attack. No need for sparkling tactics when inertia does all the work. 
+23 Ëd6! 1-0 
+Summary:  Against the set-up ...d7-d5, ...c7-c5 and ...Ìc6, we get a reversed Nimzo-Indian. 
+ 
+Acknowledgements  
+Many thanks as always to editors John Emms  and Jonathan Tait for their insight and sug-
+gestions; to comma czar Nancy for her tea-ma king and proof-reading; and to Tim for his 
+computer backing-uping skills. 
+May your opponent’s eyebrows arch at least half an inch in reproachful bewilderment, 
+and may your imaginations run wild as you open your game with 1 b3!. 
+ 
+Cyrus Lakdawala, 
+San Diego, July 2013 
+ 
+ 
+   
+ 
+Reversed Open Sicilian 
+199 chief’s insult to his enemy from The Last of the Mohicans : “Reed that bends...the enemy 
+know the shape of your back, but they have never seen the colo ur of your eyes. Your name 
+will never be mentioned again in your tribe – it is already forgotten.” 
+If instead 23...Ë g8 (the queen enters her room and slams the door behind her – her ser-
+vants wince upon hearing the br eaking of glass and the crash of splintering furniture in-
+side) 24 dxe5 Íf7 25 Ìd4 Ìxd4 26 Îxd4 Íe6 27 Ëc6 Í xg4 28 hxg4 Ìf8 29 Îxd8 Îxd8 30 
+Ëxc7 and Black crumbles. 
+24 dxe5 Ìxe5 25 Í xc8 
+Material begins to hang, as a sad co rollary to Black’s earlier decisions. 
+25...Î xc8 26 Î d5! 1-0 
+After 26... Íd6 27 Ìxb6, we see the true measure of Bl ack’s misery as Fischer’s pieces 
+crawl in like ants in jam. 
+Summary:  Play the 3 c4 move order if you have ex perience with the Scheveningen Sicilian 
+structure as Black. 
+ 
+  
+Game 30 
+R.J.Fischer-U.Andersson 
+Exhibition game, Siegen 1970   
+In the realm of human achievement, Fischer – psychosis aside – sits among the likes of 
+da Vinci and Mozart in his field. Games like this remind us why. 
+1 b3 e5 2 Íb2 Ìc6 3 c4 Ìf6 4 e3 Íe7 5 a3 0-0 6 Ëc2 
+Still waiting for ...d7-d5 to appear! 
+  
+Question:  And if Black refuses to play ...d7-d5, then what? 
+  
+Answer:  Then we get something similar to Larse n-Andersson from Chapter Two (Game 20), 
+a much slower strategic fight. 
+6...Î e8 7 d3 Íf8 8 Ìf3 a5  
+Come on man, get on with it! 
+9 Íe2 d5 
+Hooray! 
+10 cxd5 Ìxd5 11 Ìbd2 f6  
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+200 W________W  
+[rDb1rgkD]  
+[Dp0WDW0p]  
+[WDnDW0WD]  
+[0WDn0WDW]  
+[WDWDWDWD]  
+[)PDP)NDW]  
+[WGQHB)P)]  
+[$WDWIWDR]  
+W--------W 
+  
+Question:  What differentiates this posi tion from Fischer-Tukmakov? 
+  
+Answer:  Tukmakov played the loosening but more aggressive ...f7-f5. In this game Anders-
+son, true to his nature, plays the super soli d ...f7-f6, come-and-get-me formation. He also 
+tossed in ...a7-a5, which weakens b5 but cons trains White’s queenside ambitions by pre-
+venting b3-b4 expansion ideas. 
+12 0-0 Í e6 13 Êh1!! 
+W________W  
+[rDW1rgkD]  
+[Dp0WDW0p]  
+[WDnDb0WD]  
+[0WDn0WDW]  
+[WDWDWDWD]  
+[)PDP)NDW]  
+[WGQHB)P)]  
+[$WDWDRDK]  
+W--------W 
+“Faith and begorrah!” I muttered to myself, wh ile trying to puzzle out Fischer’s intent 
+when I first played over this game at the ag e of 10. (Which admittedl y is a bit odd, since I 
+am Indian, not Irish. But I was trying to imitat e Chief O’Hara, the Irish Gotham City Chief of 
+Police from the 1960s’ Batman TV show.) 
+ 
+ 
+   
+ 
+Reversed Open Sicilian 
+201   
+Question:  A random move from White rewarded  
+with a double exclamation mark? Please explain. 
+  
+Answer:  A completely new plan of immense grav ity and far-reaching consequences takes 
+birth. The double exclam was for the originality of the idea: White plans Îg1 and g2-g4, 
+after which his knight has free reign over e4 , as well as a potential attack. Today, every 
+Scheveningen, Najdorf, Kan and Taimanov Sicilian pla yer is aware of such  a plan, thanks to 
+Fischer. Of course, it entails risk for White as well, since he voluntarily weakens his own 
+king. But think about this: the only way for Black to disrupt this plan is  to pry open the cen-
+tre – not so easy, since Black’s central structure is rigid for now. 
+13...Ë d7 
+Clearing a path for ...Î ad8 and making it more difficult  for White to engineer g2-g4. 
+14 Îg1 Îad8 15 Ìe4 Ëf7 
+  
+Question:  Why did Andersson allow White g2-g4 after all? 
+  
+Answer:  I have a feeling Andersson welcomed the g- pawn thrust and didn’t trust Fischer’s 
+plan. Black pays a structural price if he attempts to thwart the plan. For example, 15... Ìb6 
+16 Ìfd2 and now if Black takes the nuclear option  and tosses in 16...f5!?, there is a high 
+cost to his king’s safety: 
+W________W  
+[WDW4rgkD]  
+[Dp0qDW0p]  
+[WhnDbDWD]  
+[0WDW0pDW]  
+[WDWDNDWD]  
+[)PDP)WDW]  
+[WGQHB)P)]  
+[$WDWDW$K]  
+W--------W 
+a) 17 Ìc5! Íxc5 18 Ëxc5 e4 19 g4!? exd3 (19...f4!? 20 Ìxe4 Íxb3 21 Ë g5 favours 
+White) 20 gxf5 Ëd5+ 21 Ë xd5 Íxd5+ 22 Í f3 Íxf3+ 23 Ìxf3 Îd7 and I like White’s chanc-
+es with his guns trained upon g7, despite Black’s deeply entrenched d3-pawn. 
+b) At first I thought 17 Ìg5 was White’s best, but now I’m not so sure. After 17... Íd5 18 
+e4 Ìd4 19 Íxd4 exd4 20 Íh5! (threatening e8 and also d5) 20...g6 21 exd5 gxh5 22 Ìe6, 
+my intuition tells me this position favours White, but Houdini  insists that Black is okay: 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+202 22...Î c8 23 Ìf3 Ìxd5 24 Ìxf8 Îxf8 25 Ìxd4 Ìf4 26 Ëc4+ Ëd5 27 Ìf3 Ëxc4 28 dxc4 Ìd3 
+29 Îa2 and it won’t be so easy to exploit Blac k’s structural weaknesses, since his powerful 
+d3-knight compensates somewhat. 
+16 g4  
+W________W  
+[WDW4rgkD]  
+[Dp0WDq0p]  
+[WDnDb0WD]  
+[0WDn0WDW]  
+[WDWDNDPD]  
+[)PDP)NDW]  
+[WGQDB)W)]  
+[$WDWDW$K]  
+W--------W 
+Genius is not always bound to precepts. In this case Fischer deliberately violates the 
+principle: Avoid weakening your king’s pawn front.  Such decisions are played with irre-
+versible intent: come and get me before I get you. 16...g6!? 
+ 
+ 
+Question:  Why did Black weaken himsel f down the a1-h8 diagonal? 
+  
+Answer:  Black probably played the move for the following reasons: 
+1. He feared g4-g5, and if ...f6-f5, then White may have a g5-g6 zwischenzug which 
+clears g5 for a knight. 
+2. If White played a future Ìh4, it may have provoked ...g7-g6 anyway. 
+3. Black may feel a bit safer if  he has a chance to play ... Íg7, although this would leave 
+c5 for the e4-knight. 
+17 Îg3! 
+White hopes to procure provisions for a long campaign by transferring resources to the 
+kingside. By lifting the rook, he  clears the way for the a1-rook. 
+17...Í g7 18 Î ag1 Ìb6  
+Attacking b3. 
+19 Ìc5  
+Covering b3, attacking b7, and threaten ing to pick off the bishop pair. 
+19...Í c8 20 Ìh4! Ìd7 21 Ìe4  
+White’s attack sits on the border of effe ctive and inadequate, and for now remains in-
+determinate. The black king’s safety and Wh ite’s surrounding forces weigh evenly on the 
+scale – until: 
+ 
+ 
+   
+ 
+Reversed Open Sicilian 
+203 21...Ìf8? 
+21...Ê h8! prevented White’s next move. 
+W________W  
+[WDb4rhkD]  
+[Dp0WDqgp]  
+[WDnDW0pD]  
+[0WDW0WDW]  
+[WDWDNDPH]  
+[)PDP)W$W]  
+[WGQDB)W)]  
+[DWDWDW$K]  
+W--------W 
+  
+Question:  I fail to understand the purpose of White’s  
+massive build-up on the g-file . Where is his breakthrough? 
+  
+Answer:  Up to now, White’s kingside forays have on ly had the effect of nettling Black, more 
+than inflicting any real damage. So let’ s turn this question  into an exercise: 
+  
+Exercise (planning): Black’s last move was an error and now, imperceptibly, White’s 
+strategic pressure yields dividends. Ho w can White make significant progress? 
+  Answer:  Fischer’s tactic enables him to eliminat e a key defender of the dark squares. 
+22 Ìf5!  
+What began as a once promising defensive ba rrier suddenly displays signs of a poten-
+tial rout. Now the attack surges forth, as if with a life of its own. 
+22...Í e6 
+22...gxf5?? loses to 23 gxf5 Íxf5 24 Îxg7+ Ëxg7 25 Ìxf6+! (this zwischenzug destroys 
+Black) 25... Êf7 26 Îxg7+ Êxg7 27 Ìxe8+. 
+23 Ìc5 Ìe7? 
+Now something just doesn’t feel right in Bl ack’s position, the same way a tiger gazes 
+upon a raw slab of meat, swinging suspiciously  from a rope in the forest. Black should try 
+to minimize his disadvantage with 23... Ìd7 24 Ìxe6 Ëxe6 25 d4! (threatening Íc4) 
+25...Ìb6 26 dxe5 fxe5 27 Ìxg7 Êxg7 28 f4, when Black remains in an unpleasant but still 
+playable position. 24 Ìxg7  
+The old black dark-squared bishop, condemne d for heresy, distressingly finds himself 
+ 
+ 
+   
+ 
+The Nimzo-Larsen Attack: Move by Move 
+204 tied to a flaming stake, unable even  to cross himself in his agony. 
+24...Ê xg7 
+The trouble with 24... Ëxg7? is that White can simply take on b7 now with 25 Ìxb7 
+Íd5+ 26 Í f3. 
+25 g5  
+Of course. Fischer ruthlessly tears down the already weakened dark squares around An-
+dersson’s king. 
+25...Ìf5 26 Îf3 b6 27 gxf6+ Êh8! 
+Black’s only hope is to use White’s f6-pawn as a shield. 27... Ëxf6?? 28 Ìe4 Ëe7 29 
+Íxe5+ is totally hopeless for Black. 
+28 Ìxe6 Îxe6 
+W________W  
+[WDW4WhWi]  
+[DW0WDqDp]  
+[W0WDr)pD]  
+[0WDW0nDW]  
+[WDWDWDWD]  
+[)PDP)RDW]  
+[WGQDB)W)]  
+[DWDWDW$K]  
+W--------W 
+Black’s defenders remain in a loose confeder ation of disconsolate clusters, all vulner-
+able, all ineffective. 
+  
+Exercise (planning): Find a forcing way to  
+increase White’s already significant advantage. 
+  
+Answer:  Principle:  Open the position when you own the bishop pair.  
+29 d4! exd4 30 Íc4 d3 
+After 30...dxe3 31 Îxf5! Îd2 32 Ë c1 gxf5 33 Îg7 Ëe8 (the queen flails about like a bee-
+tle on its back) 34 f7! clears the a1-h8-diagonal and mates. 
+31 Íxd3 Îxd3 
+Complete desperation, but 31... Ìd6 32 h4! and h4-h5! is crushing. 
+32 Ëxd3 Îd6 33 Ëc4! 
+Principle: Swap pieces when ahead in material.  
+33...Ìe6  
+33...Ë xc4 34 bxc4 Î d2 35 Í e5 (threatening 36 Îxf5! gxf5 37 f7 mate) 35...h5 36 Íxc7 is 
+totally hopeless. 
+ 
+ 
+   
+ 
+Reversed Open Sicilian 
+205 34 Íe5 Îd8 
+W________W  
+[WDW4WDWi]  
+[DW0WDqDp]  
+[W0WDn)pD]  
+[0WDWGnDW]  
+[WDQDWDWD]  
+[)PDW)RDW]  
+[WDWDW)W)]  
+[DWDWDW$K]  
+W--------W 
+In a situation of macabre foreboding, Black’s helpless king can do no more than glare 
+melancholy accusation at the growing number of attackers gathering around him. Secur-
+ing immediate victory is a moment’s work, but only if you work out the combination. 
+  
+Exercise (combination alert):  Fischer’s next move, 35 h4, is winning  
+but not the best. The g-file represents  a potential gateway into Black’s  
+position. The question is: how can Whit e enlarge the aperture of entry?  
+  
+35 h4  
+Answer:  Three conspirators in on one secret are two too many. The secret, now leaked be-
+comes common knowledge: The key is rook entry to g7, after which all hell breaks loose for 
+Black. In one sweeping motion the blockade falls, and with it all hardship is abolished for 
+White: 35 Îxf5! gxf5 36 Îg7 Ëe8 37 f7! (the long diagonal is cleared, threatening Îg8 ma-
+te with double check!) 37... Ìxg7 (now the f7-pawn, effervesce nt with joy, achieves her aim: 
+the death of her sister and he r own promotion to queen) 38 fxe8 Ë+ Îxe8 39 Ë f7 Îg8 40 
+h4 mates in a few moves. 
+35...Ìd6 36 Ëg4 Ìf8 37 h5 Ìe8 38 e4!  
+An insurance policy against an unwanted future ... Ëd5+ trick. 
+38...Î d2 39 Îh3! Êg8 
+39...Î xf2 fails to 40 hxg6 Ìxg6 41 Ëxg6. 
+40 hxg6 Ìxg6 41 f4  
+Threatening f4-f5. 
+41...Ê f8 42 Ëg5! 
+Threatening Ëh6+. 
+42...Ìd6 43 Íxd6+ 1-0 
+44 f5 is next. 

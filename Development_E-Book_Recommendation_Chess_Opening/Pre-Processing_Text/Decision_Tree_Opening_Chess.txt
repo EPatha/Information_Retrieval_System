@@ -1,0 +1,519 @@
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+ Penerapan Decision Tree untuk Menentukan 
+Pembukaan Catur sebagai Pemain Pemula atau 
+Berpengalaman  
+ 
+Raka Wirabuana Ninagan  - 13520134   
+Program Studi Teknik Informatika   
+Sekolah Teknik Elektro dan Informatika  
+Institut Teknologi Bandung , Jl. Ganesha 10 Bandung 40132, Indonesia  
+13520134 @std.stei. itb.ac.id  
+ 
+ 
+Abstract—Catur adalah olahraga yan g mensimulasikan perang 
+dunia nyata ke dalam bentuk sebuah papan kecil persegi. Dua 
+orang yang menjadi seorang ahli strategi  (disimbolkan dengan 
+putih melawan hitam)  akan saling berlawanan menuangkan 
+strategi perangnya ke dalam permainan catur. Seiring den gan 
+zaman, strategi dan taktik catur terus berevolusi dan melahirkan 
+ide-ide baru yang diciptakan oleh pemain -pemain terbaik di dunia. 
+Salah satu bagian penting dalam strategi permainan catur adalah 
+memilih langkah awal untuk dimainkan, atau dalam catur se ring 
+disebut Pembukaan (Opening). Pemilihan opening menjadi sangat 
+penting karena opening akan menjadi dasar pertama dalam 
+mengejar kemenangan di sebuah pertandingan. Oleh karena itu, 
+Decision Tree dapat digunakan untuk membantu pemain baru 
+(pemula) atau b erpengalaman sekalipun untuk menentukan 
+opening yang cocok bagi mereka.  
+ 
+Keywords —Catur, decision t ree, opening, strategi  
+ 
+ 
+I.  PENDAHULUAN  
+Dalam catur, pada umumnya ada 3 fase permainan, yaitu 
+Opening, Middlegame, dan Endgame. Sesuai arti dari masing -
+masing fase, Opening berarti pembukaan, Middlegame berarti 
+permainan di pertengahan, dan Endgame adalah fase terakhir 
+permainan. Seorang pemain catur bisa menjadi Master ketika 
+mereka berhasil mencapai titik tertentu yang membuat mereka 
+berada di puncak, misalnya menjadi juara dunia, juara nasional, 
+atau poin (rating) mereka sudah mencapai batas minimal sebuah 
+gelar master (ada banyak gelar master , Grandmaster adalah yang 
+tertinggi).   
+ 
+Gambar 1 .1 Sang Penyihir dari Riga, Mikhail Tal, Tengah Berpikir Keras.  
+sumber: Chessajedrez.com   
+Kesamaan dari semua master tersebut adalah mereka 
+menguasai cara bermain dari ketiga fase catur. Pemain yang 
+hanya me nguasai sebagian, akan kesulitan mencapai titik 
+seorang master.  
+Tidak ada fase di catur yang lebih penting, semua penting, 
+karena fase yang tidak dikuasai oleh pemain akan menjadi 
+kelemahan terbesar yang mengganggu perjalanan seorang 
+pemain catur meraih le vel tertinggi. Menurut pengalaman 
+penulis sebagai pecatur, pemain amatiran sampai ke level 
+provinsi (terutama di Indonesia) memiliki kemampuan opening 
+yang baik. Namun, setelah masuk ke dalam fase Middlegame, 
+mereka mulai kebingungan, dan akhirnya mencoba menyerang 
+sesuai strategi yang mereka susun di posisi tersebut.  
+Meskipun terlihat wajar saja, ada satu hal yang tidak disadari 
+oleh pemain -pemain ini, yaitu tidak adanya rencana ingin 
+bermain seperti apa dari awal sampai akhir. Kemampuan 
+beradaptasi terhad ap strategi lawan saja tidak cukup, diperlukan 
+juga strategi yang matang sejak awal. Catur menggunakan timer 
+(jam catur) sebagai batas waktu berpikir, dan kesalahan tidak 
+mempersiapkan strategi sejak awal adalah salah satu faktor 
+terbesar pemain menghabisk an waktu terlalu banyak untuk 
+berpikir (hanya mengandalkan kemampuan adaptasi saja).  
+Salah satu cara menyelesaikan masalah ini adalah dengan 
+menguasai opening. Menurut penulis, memilih opening berarti 
+memilih gaya bermain akan seperti apa kedepannya. Openi ng 
+menjadi karakter yang akan menentukan cara bermain pemain. 
+Uniknya, terkadang ada pemain yang mempelajar berbagai 
+solusi dari opening tertentu demi mengatasi pemain tertentu 
+yang hanya menggunakan satu opening, pada contohnya, ketika 
+putih melangkahkan pion (sering disebut juga anak) ke e4, hitam 
+memiliki banyak opsi untuk melawan opening ini, bisa dengan 
+memajukan pion ke c5, bisa dengan memajukan pion ke e5, atau 
+memajukan pion ke g6. Apabila langkah pertama putih adalah 
+memajukan pion ke d4, hitam mel akukan solusi yang berbeda 
+lagi, misalnya memajukan pion hitam ke d5 atau melangkahkan 
+kuda ke f6. Solusinya banyak sekali dan sangat variatif. Makin 
+dalam dan luas pengetahuan openingnya, makin aman situasi 
+pemain ketika memasuki Middlegame.  
+ 
+ 
+ 
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+  
+Gambar 1.2 Pembukaan Sisilia (Sicilian Defense) . 
+sumber: lichess .org (posisi papan disusun oleh penulis)  
+ 
+Seperti yang sudah disebutkan  sebelumnya berkali -kali 
+bahwa pemilihan menggunakan opening tertentu sangatlah 
+krusial. Dengan munculnya permasalahan ini, Decision Tree 
+dapat digunakan sebagai panduan dalam memilih opening agar 
+sesuai dengan gaya bermain pemain.  
+ 
+II.  TEORI DASAR  
+ 
+A. PEMBUKAAN CATUR  
+ 
+Opening yang dipilih harus sesuai dengan karakteristik 
+pemain. Menurut GM Simon Williams (GM merupakan 
+singkatan  dari Grandmaster, yang berarti salah satu pemain 
+dengan gelar tertinggi  di dunia), ada beberapa kriteria yang bisa 
+dijadikan parameter untuk memilih opening yang sesuai. 
+Diantaranya adalah:  
+1. Apakah nyaman dan senang ketika bermain 
+menggunakan opening terse but? 
+2. Apakah lebih suka permainan yang aman atau memiliki 
+situasi yang intens?  
+3. Ada di level mana kemampuannya?  
+4. Tujuannya untuk kompetisi tingkat tinggi atau hanya 
+untuk bersenang -senang?  
+ 
+Karakteristik setiap opening catur yang ada sangat bervariasi, 
+tetapi  penulis hanya akan mengelompokkannya menjadi 
+beberapa variasi sehingga tidak terlalu dalam bagi pembaca 
+yang pemula tetapi tidak terlalu sederhana juga bagi yang sudah 
+berpengalaman. Daftar kategori tersebut adalah:  
+ 
+1. Open Games  
+Permainan terbuka memiliki karakter memprioritaskan 
+untuk mengembangkan para perwiranya secepat 
+mungkin (mengembangkan disini dapat diartikan juga 
+dengan menempatkan posisi perwira di medan perang 
+utama, yaitu di tengah). Pertukaran antar pion yang 
+cepat terjadi di awal permainan te rmasuk ke dalam 
+open games. Selain itu, kedua pasukan pemain 
+memiliki pergerakan yang leluasa.  Contoh dari opening dengan karakter open games  ini adalah 
+Pembukaan Skotlandia (The Scot ch Game).  
+ 
+ 
+ 
+Gambar 2.1 The Scott Game. sumber: https://chessfox.com/13 -different -
+types -of-chess -openings/#Open -Games  
+ 
+2. Semi -Open Games  
+Permainan semi terbuka cenderung memiliki 
+karakteristik papan yang tidak seimbang seperti pada 
+gambar dibawah.  
+ 
+Gambar 2.2 Pembukaan Sisilia dari posisi hitam (Sicilian Defense). 
+sumber: https://chessfox.com/13 -different -types -of-chess -openings/#Open -
+Games  
+ 
+Bisa dilihat dari papan, sederhananya putih lebih 
+menguasai  daerah  tengah papan (4 kotak paling 
+tengah) dibandingkan hit am. Biasanya tujuan dari 
+opening seperti ini adalah untuk melakukan 
+pendekatan yang berbeda dengan strategi lawan 
+(contoh pada papan, hitam tidak berusaha untuk 
+menempati tengah, tetapi hanya mengontrolnya dengan 
+pion ke c5). Contoh dari pembukaan semi ter buka 
+adalah Yugoslav Attack yang merupakan variasi dari 
+Sicilian Defense.  
+ 
+3. Closed Games  
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+ Permainan tertutup cenderung berkarakter seperti 
+namanya, yaitu posisi tertutup, ruang gerak sempit, 
+tidak banyak dan sulit terjadi pertukaran perwira, dan 
+kecepatan pe rmainan lebih lambat. Contoh dari 
+pembukaan tertutup adalah Closed Game (ini memang 
+nama dari openingnya).  
+ 
+4. Semi -Closed Games  
+Pada umumnya, permainan semi tertutup terjadi ketika 
+putih melakukan langkah pertama yang cenderung 
+tertutup, tetapi tidak dibala s dengan langkah yang 
+sama, sehingga kesannya seperti kebalikan dari semi 
+open games . Perbedaannya, pembukaan yang 
+menghasilkan permainan semi tertutup akan membuat 
+permainan lebih membutuhkan kemampuan 
+bermanuver di fase Middlegame karena posisinya tidak 
+terbuka sehingga tidak bisa menyerang atau melakukan 
+pergerakan lebih leluasa. Contoh dari pembukaan yang 
+menghasilkan permainan semi tertutup adalah The 
+Queen’s Indian Defense.  
+ 
+5. Gambit Opening  
+Pembukaan jenis Gambit ini menarik, karena Gambit 
+memiliki cir i khas mengorbankan salah satu perwira 
+catur di awal permainan (biasanya pion yang 
+dikorbankan) demi meraih keuntungan posisi ataupun 
+jumlah langkah (termasuk pengembangan).  Biasanya 
+pemain yang memiliki mentar menyerang ataupun 
+kurang suka posisi tertutup akan nyaman menggunakan 
+pembukaan Gambit. Salah satu contoh pembukaan 
+Gambit adalah Benko Gambit.  
+ 
+Sebenarnya masih banyak sekali jenis yang dapat dijelaskan 
+dengan karakte r yang lebih spesifik, tetapi jenis -jenis tersebut 
+akan penulis masukkan ke salah satu dari 5 kategori di atas.  
+Berikutnya, di bawah ini akan ada tabel yang berisi mengenai 
+pembukaan dari setiap kategori.  
+Open Games  Level  Karakter  
+1 The Scotch Game  Pemula /Pro Agresif  
+2 Guioco Piano  Pemula  Normal  
+3 Ruy Lopez  Pro Agresif  
+4 The Italian Game  Pemula /Pro Agresif  
+Semi -Open Games   
+1 Caro -Kann Defense  Pemula  Defensif  
+2 French Defense  Pemula /Pro Defensif  
+3 Alekhine Defense  Pro Agresif  
+Closed Games   
+1 London  System  Pemula  Defensif  
+2 Slav Defense  Pemula/Pro  Agresif  
+Semi -Closed  Games   
+1 Nimzo Indian Defense  Pemula/Pro  Defensif  
+2 Queen’s Indian Defense  Pemula/Pro  Defensif  
+Gambit Opening   
+1 Benko Gambit  Pemula  Agresif  
+2 King’s Gambit  Pemula  Agresif  
+ 
+Elemen dari tabel di atas dikelompokkan berdasarkan 
+karakteristik umum yang ditampilkan masing -masing 
+pembukaan. Data mengenai karakter tersebut berasal dari banyak pendapat baik master maupun ahli catur yang tertera di 
+dunia maya. Sangat memungkinkan apab ila pembukaan yang 
+digunakan adalah Closed Games  tetapi permainannya tiba -tiba 
+sangat terbuka. Sekali lagi, catur memiliki kemungkinan yang 
+sangat luas tergantung kedua pemain yang bertanding.  
+Apakah pembukaan -pembukaan di atas merupakan 
+pembukaan yang bag us? Setidaknya apabila suatu urutan 
+langkah catur sudah diberi nama pembukaan dan sudah 
+dipublikasikan ke seluruh dunia, pembukaan tersebut sudah 
+memenuhi standar -standar dasar sebuah pembukaan. Untuk 
+validasi  kualitas , akan dicantumkan para pemain tingkat  dunia 
+yang menggunakan beberapa pembukaan di atas  sehingga tidak 
+perlu diragukan lagi  kualitas dari sebuah pembukaan , bahkan 
+untuk awam sekalipun . 
+ 
+1. The Scotch Game  
+Digunakan oleh banyak Grandmaster terbaik seperti GM 
+Garry Kasparov, GM Vladimir Kramnik, dan pemain 
+catur terbaik di dunia saat ini, GM Magnus Carlsen.  
+  
+ 
+Gambar 2.3 GM Garry Kasparov (kiri atas), GM Vladimir Kramnik  
+(kanan atas), dan GM Magnus Carlsen (bawah).  
+sumber: google search image  
+ 
+2. Nimzo Indian Defense  
+Pemain top dunia yang menggunakan pembukaan ini 
+adalah GM José Capablanca  dan GM Mikhail Tal.  
+ 
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+   
+Gambar 2.4 GM José Capablanca ( kiri) dan GM Mikhail Tal   
+(kanan ). sumber: google search image  
+ 
+Tentu para GM ini bisa menggunakan pembukaan tingkat 
+biasa mau pun tingkat lanjut dengan sangat baik. Ini hanya 
+sebagai gambaran bahwa bukan masalah kuat atau tidaknya 
+sebuah pembukaan, tetapi cocok atau tidaknya dengan karakter 
+bermain.  
+ 
+B. POHON  
+ 
+Pohon adalah graf tak berarah yang terhubu ng dan tidak 
+mengandung sirkuit. Lihat gambar berikut.  
+ 
+ 
+Gambar 2.5  Dua Graf yang termasuk pohon dan 2 graf yang tidak 
+termasuk pohon .  
+sumber: https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag1.pdf  
+ 
+Ada dua graf yang termasuk pohon dan ada dua ya ng bukan 
+pohon. Berdasarkan definisi, gambar bagian ketiga dan keempat 
+bukan sebuah pohon karena gambar bagian 3 memiliki sirkuit a -
+f-d dan gambar bagian 4 tidak terhubung meskipun seolah -olah 
+berpotongan di tengah.  
+Kumpulan dari p ohon -pohon akan membent uk Hutan 
+(forest ), dengan contoh seperti berikut.  
+ 
+Gambar 2.6  Contoh Hutan. sumber: 
+https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -2021/Pohon -
+2020 -Bag1.pdf  
+ Pohon memiliki jenis yang disebut pohon berakar, dengan 
+definisi sebuah simpul diperlakukan sebagai akar.   
+Gambar 2.7  Pohon berakar.  
+ sumber: https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag2.pdf  
+ 
+Ada beberapa terminologi yang terdapat pada pohon berakar,  
+yaitu :  
+a. Anak ( child) 
+Pada Gambar 5, simpul b,  c, dan d adalah anak dari a. 
+Simpul e dan f adalah anak dari simpul b.  
+ 
+b. Orangtua ( parent ) 
+Pada Gambar 5, simpul a adalah orangtua dari b, c, dan 
+d. Begitupun juga simpul b adalah orangtua dari e dan 
+f. 
+ 
+c. Lintasan ( path) 
+Lintasan dari a ke j adalah a, b, e,  dan j, dengan panjang 
+lintasan 3.  
+ 
+d. Saudara kandung ( sibling ) 
+Simpul yang memiliki orangtua yang sama merupakan 
+saudara kandung, seperti e dan f yang orangtuanya 
+adalah b.  
+ 
+e. Upapohon ( subtree ) 
+Sesuai namanya, upapohon berarti subpohon, misalnya 
+pohon yang a karnya dimulai dari b.  
+ 
+f. Derajat ( degree ) 
+Jumlah anak pada simpul yang dimaksud merupakan 
+derajat. Misalnya derajat g adalah 1, derajat b adalah 2, 
+derajat a adalah 3.  
+ 
+g. Daun ( leaf) 
+Simpul yang tidak memiliki anak, sehingga berderajat 
+0. Contohnya adalah sim pul h,i, dan j.  
+ 
+h. Simpul dalam ( internal nodes ) 
+Simpul yang memiliki anak. Contohnya adalah simpul 
+b, d, e, g, dan k.  
+ 
+i. Aras ( level ) 
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+ Sesuai namanya, aras merupakan tingkatan atau level. 
+Misalnya pada simpul g memiliki aras 2. Simpul a 
+memiliki aras 0.  
+Gambar 2.8  Aras dari sebuah pohon.  
+ sumber: https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag2.pdf  
+ 
+j. Tinggi  ( height ) atau Kedalaman ( depth ) 
+Kedalaman atau tinggi dapat dianggap juga sebagai 
+aras maksimum dari suatu pohon. Pohon yang dipakai 
+sejak terminologi sebelumnya memiliki kedalaman 4.  
+ 
+Pohon berakar yang memiliki cabang paling banyak n di 
+setiap simpulnya disebut juga dengan Pohon n -ary. Pohon yang 
+memiliki n sebanyak 2 adalah pohon biner.  Pohon biner 
+termasuk pohon y ang paling penting karena sangat aplikatif 
+(banyak aplikasinya). Pohon biner termasuk pohon terurut 
+karena ada perbedaan urutan anak. Selain itu, 2 anak dari pohon 
+biner dibedakan menjadi anak kiri ( left child ) dan anak kanan 
+(right child ).  
+Salah satu apl ikasi dari pohon biner adalah pohon keputusan.  
+Sistem dari pohon keputusan adalah perbandingan antara dua 
+benda dan keputusan yang diambil disesuaikan dengan tujuan 
+dari pembuatan pohon keputusan tersebut. Pada Gambar 7, 
+pohon tersebut bertujuan untuk mel akukan pengurutan 3 buat 
+elemen berdasarkan nilai yang paling besar. Maka yang perlu 
+dilakukan adalah membandingkan dua elemen terlebih dahulu 
+dan melakukan perbandingan lagi apabila urutan masih belum 
+bisa ditentukan.  
+Gambar 2.9  Pohon keputusan.  
+ sumber: https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag2.pdf  
+ 
+ III.   APLIKASI DECISION TREE DALAM MENENTUKAN 
+PEMBUKAAN CATUR BERDASARKAN 
+KARAKTERISTIKNYA  
+A. Penentuan Parameter Perbandingan  
+Dalam menyusun pohon keputusan untuk menentukan 
+pembukaan catur yang pas, perlu dipersiapkan parameter apa 
+yang bisa menjadi dasar dari keputusan yang diambil. Pada 
+bagian teori dasar telah dicantumkan apa saja yang bisa menjadi 
+pertanyaan untuk menentukan pembukaan catur yang pas 
+dengan kara kter diri. Namun, di sini akan dibuat parameter yang 
+lebih konkret.  
+Pembukaan catur memiliki tingkat pemahaman yang tinggi 
+maupun biasa saja, sehingga dibutuhkan kesadaran pemain 
+terhadap batas kemampuan pada saat ini.  Oleh karena itu, 
+parameter pertama ya ng akan digunakan adalah level bermain  
+yang  dibagi menjadi dua, yaitu pemula atau pemain lama 
+(ekstremnya bisa disebut atlet atau profesional).  
+Karakter bermain menjadi faktor yang sangat penting karena 
+catur bukanlah olahraga yang sempit. Catur memiliki 
+kemungkinan yang sangat luas sehingga akan banyak sekali 
+situasi papan yang diluar dugaan, dan pembukaan yang selaras 
+dengan karakter bermain akan mampu membantu pemain 
+beradaptasi dengan situasi. Maka, diputuskan parameter kedua 
+yang akan digunakan di poho n keputusan ini adalah karakter 
+bermain . Sekilas terlihat parameter ini cenderung sangat 
+subjektif, tetapi saya menjamin seiring dengan sering bermain 
+dengan berbagai lawan, pemain akan sadar tentang karakter 
+langkah yang mereka lakukan ketika berada di si tuasi yang 
+diluar dugaan, misalnya ketika tertekan cenderung memainkan 
+langkah yang mengamankan diri, atau cenderung melakukan 
+pengorbanan demi menyerang.  
+Karakter bermain akan dibagi  menjadi 2, yaitu menyerang 
+atau bertahan. Ketika karakternya menyerang,  disarankan untuk 
+menggunakan pembukaan dengan jenis Open Games dan 
+Gambit Opening . Apabila karakternya bertahan, alternatif yang 
+dapat dipilih adalah pembukaan dengan jenis Closed Game . Ada 
+pemain yang merasa dirinya suka menyerang tetapi ingin tetap 
+memi liki pertahanan yang fokus, sehingga perlu menggunakan 
+pembukaan yang bersifat semi. Pembukaan yang tidak memiliki 
+karakter ekstrem akan muncul di parameter ketiga, yaitu fokus 
+atau terbagi dengan karakter yang tidak dominan  (misalnya 
+berkarakter menyerang , tetapi tidak terlalu ekstrem karena fokus 
+untuk menjaga pertahanan yang cukup solid).  
+Pada teori dasar disebutkan bahwa target bermain catur 
+menjadi hal yang patut dipertimbangkan juga untuk memilih 
+pembukaan (misalnya target menjadi juara kecamatan atau  juara 
+nasional atau bahkan dunia) . Namun, pertimbangan ini tidak 
+akan penulis masukkan ke dalam parameter pengambilan 
+keputusan karena pembukaan yang biasa dipakai oleh pemula 
+pun tetap mampu membuat seseorang mendapatkan gelar, 
+sehingga terkesan membatas i kualitas pembukaan catur apabila 
+penulis masukkan sebagai parameter.  Perlu dibedakan antara 
+target dan kemampuan saat ini (parameter pertama). Parameter 
+pertama mengukur kemampuan dasar catur yang dimiliki, 
+karena apabila pemain yang baru terjun di dunia  catur 
+mempelajari Advance Opening (pembukaan tingkat lanjut) akan 
+sulit memahami alasan -alasan dari setiap langkahnya.  
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+  
+Gambar 3.1 Decision Tree dari permasalahan yang diajukan.  
+ sumber: karya penulis  
+ 
+ B. Decision Tree  
+Gambar 3.1 di atas  adalah decision tree  yang dihasilkan 
+setelah menganalisis parameter dan kemungkinan hasil 
+keputusan.  
+Perlu diingat bahwa decision tree  ini tidak menjadi pemandu 
+mutlak untuk memilih pembukaan catur. Sangat diperbolehkan 
+untuk melanggar pohon keputusan yang dibuat  berdasarkan 
+opini umum dan professional, tetapi perkembangan dalam 
+bermain catur akan jauh lebih terasa (terutama di kemampuan 
+bermain di awal permainan) ketika pohon keputusan ini 
+digunakan.  
+ 
+IV.   KESIMPULAN  
+Decision tree dapat digunakan untuk menyelesa ikan berbagai 
+jenis masalah. Buktinya, dengan analisis yang cukup, pohon 
+keputusan untuk memutuskan style bermain sebuah olahraga 
+(pada kasus makalah ini olahraga catur) bisa diterapkan. Pohon 
+keputusan yang dibuat dengan data yang lebih detail lagi akan 
+memberikan akurasi yang lebih baik lagi sebagai panduan untuk 
+memutuskan. Banyak pecatur yang merasa bahwa dengan 
+banyak bertanding, kemampuan akan meningkat. Pernyataan 
+tersebut memang benar, tetapi tetap dibutuhkan dasar permainan 
+catur yang kuat, salah s atunya adalah pemahaman pembukaan 
+dan pembukaan yang dikuasai untuk digunakan pada 
+pertandingan. Pohon keputusan ini memberikan arah kepada 
+para pemain yang ingin mempelajari pembukaan dengan baik, 
+sehingga tidak terlalu membuang waktu dengan mencoba satu 
+persatu.  
+ 
+V.   PENUTUP  
+Penulis mengucapkan puji dan syukur kepada Tuhan YME 
+karena telah mengizinkan makalah ini untuk tuntas secara tepat 
+waktu. Selain itu, penulis juga berterima kasih yang sebesar -
+besarnya kepada:  
+1. Seluruh pengajar mata kuliah IF2120 Mat ematika Diskrit 
+Semester I Tahun 2021/2022, terutama Bapak Dr. Ir. 
+Rinaldi Munir, M.T., dan Ibu Dr. Nur Ulfa Maulidevi S.T., M.Sc. sebagai pengajar K -03 (Kelas 03).  
+2. Keluarga penulis yang bersedia mendukung dan 
+memberi inspirasi dalam proses pembuatan makal ah ini.  
+ 
+Tentu saja, ketidaksempurnaan adalah hal yang pasti dari 
+makalah ini. Saya harap di masa yang akan dating,  ada penulis 
+lainnya yang bersedia menyempurnakan tulisan ini. Mohon 
+maaf apabila terdapat kekurangan, penulis akan menerima 
+apapun bentuk da n isi dari kritik dan saran yang disampaikan 
+oleh para pembaca.  Semoga tulisan ini memberi manfaat sesuai 
+tujuan dari penulisan makalah ini. Terima kasih.  
+ 
+REFERENSI  
+[1] https://informatika.stei.itb.ac.id/~rinal di.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag1.pdf , pp. 1 –5, diakses pada 5 Desember 2021  
+[2] https://informatika.stei.itb.ac.id/~rinaldi.munir/Matdis/2020 -
+2021/Pohon -2020 -Bag2.pdf , pp. 1 –22, diakses pada 5 Desember 2021  
+[3] https://chessfox.com/chess -openings -list/, diakses pada 5 Desember 2021  
+[4] https://chessfox.co m/13 -different -types -of-chess -openings/#Open -
+Games , diakses pada 5 Desember 2021  
+[5] https://www.chess.com/article/view/the -best-chess -openings -for-
+beginners , diakses pada 12 Desember 2021  
+[6] https://www.dummies.com/article/home -auto-hobbies/games/board -
+games/che ss/opening -up-the-board -with-open -chess -games -192305 , 
+diakses pada 14 Desember 2021  
+[7] https://www.dummies.com/article/home -auto-hobbies/games/board -
+games/chess/picking -a-fight-with-semi -open -chess -games -
+192301?keyword=Semi -Open , diakses pada 14 Desember 2021  
+[8] https://www.dummies.com/article/home -auto-hobbies/games/board -
+games/chess/applying -strategy -with-closed -chess -games -
+192297?keyword=Closed%20game , diakses pada 14 Desember 2021  
+[9] https://www.dummies.com/article/home -auto-hobbies/games/board -
+games/chess/restr icting -movement -with-semi -closed -chess -games -
+192304?keyword=Semi%20Closed%20Games , diakses pada 14 
+Desember 2021  
+[10] https://www.chess.com/openings/Scotch -Game , diakses pada 14 
+Desember 2021  
+[11] https://www.ichess.net/blog/best -openings -advanced -players -nimzo -
+indian -defense/ , diakses pada 14 Desember 2021  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Makalah I F2120  Matematika Diskrit  – Sem. I Tahun 20 21/2022 
+ PERNYA TAA N 
+Dengan ini saya menyatakan bahwa makalah yang saya tulis 
+ini adalah tulisan saya sendiri, bukan saduran, atau terjemahan 
+dari makalah orang lain, dan bukan plagiasi.  
+ 
+Bandung, 14 Desember  2021    
+ 
+ 
+ 
+Raka Wirabuana Ninagan  13520134  
+
