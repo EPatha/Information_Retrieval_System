@@ -6,22 +6,18 @@ from nltk.corpus import stopwords
 import nltk
 import docx
 from PyPDF2 import PdfReader
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
+from tkinter import Tk, Label, Button, filedialog, ttk, Text
 
 nltk.download('punkt')
 nltk.download('stopwords')
 
-# Tokenizer sederhana
+# Fungsi tambahan
 def simple_tokenizer(text):
-    """Tokenizer sederhana yang menghapus stopword."""
     stop_words = set(stopwords.words('english'))
-    tokens = re.findall(r'\b\w+\b', text.lower())  # Memisahkan kata-kata berdasarkan karakter alfanumerik
+    tokens = re.findall(r'\b\w+\b', text.lower())
     return [word for word in tokens if word not in stop_words]
 
-# Preprocessing e-book
 def preprocess_text(file_path):
-    """Preprocess text from a PDF or DOCX file."""
     if file_path.endswith(".pdf"):
         reader = PdfReader(file_path)
         text = " ".join([page.extract_text() for page in reader.pages])
@@ -30,52 +26,36 @@ def preprocess_text(file_path):
         text = " ".join([p.text for p in doc.paragraphs])
     else:
         raise ValueError("Unsupported file format. Only PDF and DOCX are supported.")
+    return simple_tokenizer(text)
 
-    # Tokenization with simple_tokenizer
-    tokens = simple_tokenizer(text)
-    return tokens
-
-# Analisis PGN
-def process_pgn_file(pgn_file, color):
-    """Process PGN file and return a DataFrame with color information."""
+def process_pgn_file(file_path, color):
     games_data = []
-    game = chess.pgn.read_game(pgn_file)
-    
-    while game:
-        game_info = game.headers
-        game_moves = []
-        board = game.board()
-        for move in game.mainline_moves():
-            game_moves.append(board.san(move))
-            board.push(move)
-        games_data.append({
-            "White": game_info["White"],
-            "Black": game_info["Black"],
-            "Date": game_info["Date"],
-            "Result": game_info["Result"],
-            "Moves": " ".join(game_moves),
-            "Color": color
-        })
+    with open(file_path, 'r') as pgn_file:
         game = chess.pgn.read_game(pgn_file)
+        while game:
+            game_info = game.headers
+            game_moves = []
+            board = game.board()
+            for move in game.mainline_moves():
+                game_moves.append(board.san(move))
+                board.push(move)
+            games_data.append({
+                "White": game_info["White"],
+                "Black": game_info["Black"],
+                "Date": game_info["Date"],
+                "Result": game_info["Result"],
+                "Moves": " ".join(game_moves),
+                "Color": color
+            })
+            game = chess.pgn.read_game(pgn_file)
     return pd.DataFrame(games_data)
 
-# Analisis Win Rate dengan Filter Frekuensi
 def analyze_win_rate(df):
-    """Calculate win rates for openings based on the first two moves, separately for White and Black."""
-    # Pastikan kolom 'Moves' ada dan diolah dengan benar
     if 'Moves' not in df.columns:
-        print("Kolom 'Moves' tidak ditemukan dalam DataFrame.")
         return pd.DataFrame()
-
     df['First_Two_Moves'] = df['Moves'].apply(lambda x: ' '.join(x.split()[:2]))
-    
-    # Cek apakah kolom First_Two_Moves terbentuk
-    print("Kolom 'First_Two_Moves' setelah penambahan:")
-    print(df[['Moves', 'First_Two_Moves']].head())
-
     df['White_Result'] = df['Result'].map({'1-0': 1, '0-1': 0, '1/2-1/2': 0.5})
     df['Black_Result'] = df['Result'].map({'1-0': 0, '0-1': 1, '1/2-1/2': 0.5})
-
     white_win_rate = df[df['Color'] == 'White'].groupby('First_Two_Moves').agg(
         total_games_white=('White_Result', 'count'),
         win_rate_white=('White_Result', 'mean')
@@ -84,119 +64,59 @@ def analyze_win_rate(df):
         total_games_black=('Black_Result', 'count'),
         win_rate_black=('Black_Result', 'mean')
     )
+    return pd.merge(white_win_rate, black_win_rate, left_index=True, right_index=True, how='outer')
 
-    win_rate = pd.merge(white_win_rate, black_win_rate, left_index=True, right_index=True, how='outer')
+# GUI Utama
+def select_file():
+    file_path = filedialog.askopenfilename(filetypes=[("PGN Files", "*.pgn")])
+    if file_path:
+        process_file(file_path)
 
-    # Filter only rows with total games > 20
-    win_rate = win_rate[
-        (win_rate['total_games_white'] > 20) | (win_rate['total_games_black'] > 20)
-    ]
-
-    # Cek hasil win_rate DataFrame
-    print("DataFrame 'win_rate' setelah analisis:")
-    print(win_rate.head())
-
-    return win_rate
-
-# Fungsi utama
-if __name__ == "__main__":
-    dataset_folder = "/home/ep/Documents/Github/Information_Retrieval_System/UTS_STKI/Dataset/"
-
-    # Step 1: Preprocess PDF and DOCX
-    print("Preprocessing e-books...")
-    e_books = [f for f in os.listdir(dataset_folder) if f.endswith(('.pdf', '.docx'))]
-    processed_books = {}
-    for book in e_books:
-        book_path = os.path.join(dataset_folder, book)
-        processed_books[book] = preprocess_text(book_path)
-
-    # Step 2: Upload PGN file via file dialog
-    Tk().withdraw()  # Hide the root Tk window
-    pgn_file_path = askopenfilename(title="Select PGN File", filetypes=[("PGN Files", "*.pgn")])
-
-    if not pgn_file_path:
-        print("No file selected!")
-    else:
-        color = input("Enter the color (White or Black): ")
-        
-        with open(pgn_file_path, 'r') as pgn_file:
-            pgn_df = process_pgn_file(pgn_file, color)
-        
-        # Menambahkan verifikasi data
+def process_file(file_path):
+    color = color_input.get()
+    if color not in ["White", "Black"]:
+        result_label.config(text="Error: Please enter 'White' or 'Black'")
+        return
+    try:
+        pgn_df = process_pgn_file(file_path, color)
         if pgn_df.empty:
-            print("Data PGN kosong!")
-        else:
-            win_rate_df = analyze_win_rate(pgn_df)
-
-            if not win_rate_df.empty:
-                # Find lowest accuracy move
-                min_accuracy_move = win_rate_df.sort_values(
-                    by=['win_rate_white', 'win_rate_black'], ascending=True
-                ).iloc[0]['First_Two_Moves']
-
-                # Step 3: Search based on lowest accuracy move
-                print(f"Searching e-books for move: {min_accuracy_move}")
-                search_results = search_text_in_ebooks(dataset_folder, min_accuracy_move)
-
-                print("Search Results:")
-                for file, path in search_results.items():
-                    print(f"{file}: {path}")
-            else:
-                print("Tidak ada data win rate yang valid.")
-
-# Fungsi pencarian teks berdasarkan query
-def search_text_in_ebooks(folder_path, query):
-    """Search for specific moves in e-books."""
-    results = {}
-    for root, _, files in os.walk(folder_path):
-        for file in files:
-            if file.endswith((".pdf", ".docx")):
-                file_path = os.path.join(root, file)
-                print(f"Processing file: {file}")
-                try:
-                    tokens = preprocess_text(file_path)
-                    text = " ".join(tokens)
-                    if re.search(r'\b' + re.escape(query) + r'\b', text):
-                        results[file] = file_path
-                except Exception as e:
-                    print(f"Error processing {file}: {e}")
-    return results
-
-# Main Execution
-if __name__ == "__main__":
-    dataset_folder = "/home/ep/Documents/Github/Information_Retrieval_System/UTS_STKI/Dataset/"
-
-    # Step 1: Preprocess PDF and DOCX
-    print("Preprocessing e-books...")
-    e_books = [f for f in os.listdir(dataset_folder) if f.endswith(('.pdf', '.docx'))]
-    processed_books = {}
-    for book in e_books:
-        book_path = os.path.join(dataset_folder, book)
-        processed_books[book] = preprocess_text(book_path)
-
-    # Step 2: Upload PGN file via file dialog
-    Tk().withdraw()  # Hide the root Tk window
-    pgn_file_path = askopenfilename(title="Select PGN File", filetypes=[("PGN Files", "*.pgn")])
-
-    if not pgn_file_path:
-        print("No file selected!")
-    else:
-        color = input("Enter the color (White or Black): ")
-        
-        with open(pgn_file_path, 'r') as pgn_file:
-            pgn_df = process_pgn_file(pgn_file, color)
-        
+            result_label.config(text="No data found in PGN file.")
+            return
         win_rate_df = analyze_win_rate(pgn_df)
+        if win_rate_df.empty:
+            result_label.config(text="No valid win rate data.")
+            return
+        display_results(win_rate_df)
+    except Exception as e:
+        result_label.config(text=f"Error: {e}")
 
-        # Find lowest accuracy move
-        min_accuracy_move = win_rate_df.sort_values(
-            by=['win_rate_white', 'win_rate_black'], ascending=True
-        ).iloc[0]['First_Two_Moves']
+def display_results(df):
+    for widget in result_frame.winfo_children():
+        widget.destroy()
+    tree = ttk.Treeview(result_frame, columns=list(df.columns), show='headings')
+    for col in df.columns:
+        tree.heading(col, text=col)
+        tree.column(col, width=100)
+    for index, row in df.iterrows():
+        tree.insert("", "end", values=list(row))
+    tree.pack(fill="both", expand=True)
 
-        # Step 3: Search based on lowest accuracy move
-        print(f"Searching e-books for move: {min_accuracy_move}")
-        search_results = search_text_in_ebooks(dataset_folder, min_accuracy_move)
+# Main GUI Setup
+root = Tk()
+root.title("Chess Analysis Tool")
+root.geometry("800x600")
 
-        print("Search Results:")
-        for file, path in search_results.items():
-            print(f"{file}: {path}")
+Label(root, text="PGN Chess Analyzer", font=("Arial", 16)).pack(pady=10)
+Button(root, text="Select PGN File", command=select_file).pack(pady=5)
+
+Label(root, text="Enter Color (White or Black):").pack()
+color_input = Text(root, height=1, width=20)
+color_input.pack()
+
+result_label = Label(root, text="", fg="red")
+result_label.pack(pady=5)
+
+result_frame = ttk.Frame(root)
+result_frame.pack(fill="both", expand=True, pady=10)
+
+root.mainloop()
