@@ -1,9 +1,19 @@
 import os
-from tkinter import Tk, Label, Button, filedialog, ttk, Text
-from external_processing import preprocess_text  # Import from external_processing.py
+from tkinter import Tk, Label, Button, ttk
+from external_processing import preprocess_text  # Import dari external_processing.py
+import nltk
+
+# Menambahkan path untuk nltk_data
+nltk.data.path.append('/home/ep/nltk_data')
 
 # Folder berisi file lokal (PDF dan DOCX)
-LOCAL_FILES_DIR = "/home/ep/Documents/Github/Information_Retrieval_System/UTS_STKI/Dataset"
+LOCAL_FILES_DIR = "/home/ep/Documents/Github/Information_Retrieval_System/Analyze_E-book/Dataset"
+
+# Debugging: Pastikan resource 'punkt' tersedia
+try:
+    nltk.download('punkt')
+except Exception as e:
+    print(f"Error downloading NLTK punkt resource: {e}")
 
 def process_local_files():
     """
@@ -11,6 +21,10 @@ def process_local_files():
     :return: List of dictionaries containing file names and tokens.
     """
     local_data = []
+    if not os.path.exists(LOCAL_FILES_DIR):
+        print(f"Directory {LOCAL_FILES_DIR} tidak ditemukan.")
+        return local_data
+
     for file_name in os.listdir(LOCAL_FILES_DIR):
         file_path = os.path.join(LOCAL_FILES_DIR, file_name)
         if file_path.endswith((".pdf", ".docx")):
@@ -32,6 +46,10 @@ def display_results(local_files_data):
     """
     for widget in result_frame.winfo_children():
         widget.destroy()
+
+    if not local_files_data:
+        Label(result_frame, text="No files processed.", font=("Arial", 12, "bold"), fg="red").pack()
+        return
 
     Label(result_frame, text="Local Files Preprocessing Results", font=("Arial", 12, "bold")).pack()
     for file_data in local_files_data:
