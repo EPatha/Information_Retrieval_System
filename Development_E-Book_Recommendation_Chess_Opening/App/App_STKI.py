@@ -5,12 +5,11 @@ import chess.pgn
 import nltk
 import docx
 from PyPDF2 import PdfReader
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
+from tkinter import Tk, filedialog, Label, Button, Entry, Text, Scrollbar, messagebox
+from nltk.corpus import stopwords
 
 nltk.download('punkt')
 nltk.download('stopwords')
-from nltk.corpus import stopwords
 
 # Tokenizer sederhana
 def simple_tokenizer(text):
@@ -34,7 +33,7 @@ def preprocess_text(file_path):
 
         return simple_tokenizer(text)
     except Exception as e:
-        print(f"Error processing file {file_path}: {e}")
+        messagebox.showerror("Error", f"Error processing file {file_path}: {e}")
         return []
 
 # Analisis PGN
@@ -61,7 +60,7 @@ def process_pgn_file(pgn_file, color):
             })
             game = chess.pgn.read_game(pgn_file)
     except Exception as e:
-        print(f"Error processing PGN file: {e}")
+        messagebox.showerror("Error", f"Error processing PGN file: {e}")
 
     return pd.DataFrame(games_data)
 
@@ -69,7 +68,7 @@ def process_pgn_file(pgn_file, color):
 def analyze_win_rate(df):
     """Calculate win rates for openings based on the first two moves."""
     if 'Moves' not in df.columns:
-        print("Column 'Moves' not found in DataFrame.")
+        messagebox.showwarning("Warning", "Column 'Moves' not found in DataFrame.")
         return pd.DataFrame()
 
     df['First_Two_Moves'] = df['Moves'].apply(lambda x: ' '.join(x.split()[:2]))
@@ -95,59 +94,88 @@ def analyze_win_rate(df):
 def find_min_accuracy_move(win_rate_df):
     """Find the move with the lowest accuracy."""
     if win_rate_df.empty:
-        print("Win rate DataFrame is empty!")
+        messagebox.showwarning("Warning", "Win rate DataFrame is empty!")
         return None
 
     try:
         return win_rate_df.sort_values(by=['win_rate_white', 'win_rate_black'], ascending=True).index[0]
     except Exception as e:
-        print(f"Error finding minimum accuracy move: {e}")
+        messagebox.showerror("Error", f"Error finding minimum accuracy move: {e}")
         return None
 
-# Pencarian teks pada e-books
-def search_text_in_ebooks(folder_path, query):
-    """Search for specific moves in e-books."""
-    results = {}
-    for root, _, files in os.walk(folder_path):
+# Proses otomatis semua file PDF dan DOCX
+def process_all_files(directory):
+    """Process all PDF and DOCX files in the directory."""
+    tokens = []
+    for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith((".pdf", ".docx")):
+            if file.endswith(".pdf") or file.endswith(".docx"):
                 file_path = os.path.join(root, file)
-                try:
-                    tokens = preprocess_text(file_path)
-                    if query in tokens:
-                        results[file] = file_path
-                except Exception as e:
-                    print(f"Error processing {file}: {e}")
-    return results
+                tokens.extend(preprocess_text(file_path))
+    return tokens
 
-# Main Execution
-if __name__ == "__main__":
-    dataset_folder = "/home/ep/Documents/Github/Information_Retrieval_System/Analyze_E-book/Dataset"
+# Fungsi utama GUI
+def main():
+    def select_pgn_file():
+        file_path = filedialog.askopenfilename(title="Select PGN File", filetypes=[("PGN Files", "*.pgn")])
+        if file_path:
+            entry_pgn_file.delete(0, "end")
+            entry_pgn_file.insert(0, file_path)
 
-    print("Preprocessing e-books...")
-    e_books = [f for f in os.listdir(dataset_folder) if f.endswith(('.pdf', '.docx'))]
-    processed_books = {}
-    for book in e_books:
-        book_path = os.path.join(dataset_folder, book)
-        processed_books[book] = preprocess_text(book_path)
+    def analyze_file():
+        pgn_file_path = entry_pgn_file.get()
+        color = entry_color.get()
 
-    Tk().withdraw()
-    pgn_file_path = askopenfilename(title="Select PGN File", filetypes=[("PGN Files", "*.pgn")])
+        if not os.path.exists(pgn_file_path):
+            messagebox.showerror("Error", "PGN file not found!")
+            return
 
-    if not pgn_file_path:
-        print("No file selected!")
-    else:
-        color = input("Enter the color (White or Black): ")
+        if color.lower() not in ['white', 'black']:
+            messagebox.showerror("Error", "Invalid color! Please enter 'White' or 'Black'.")
+            return
 
         with open(pgn_file_path, 'r') as pgn_file:
-            pgn_df = process_pgn_file(pgn_file, color)
+            pgn_df = process_pgn_file(pgn_file, color.capitalize())
 
         win_rate_df = analyze_win_rate(pgn_df)
         if not win_rate_df.empty:
             min_accuracy_move = find_min_accuracy_move(win_rate_df)
-            print(f"Lowest accuracy move: {min_accuracy_move}")
+            result_text.delete(1.0, "end")
+            result_text.insert("end", f"Lowest accuracy move: {min_accuracy_move}\n")
+            result_text.insert("end", win_rate_df.to_string())
 
-            search_results = search_text_in_ebooks(dataset_folder, min_accuracy_move)
-            print("Search Results:")
-            for file, path in search_results.items():
-                print(f"{file}: {path}")
+    def search_engine():
+        search_query = " ".join(global_tokens[:2]) if global_tokens else ""
+        result_text.delete(1.0, "end")
+        result_text.insert("end", f"Search Query: {search_query}\n")
+
+    # GUI
+    root = Tk()
+    root.title("Chess Analysis Tool")
+
+    Label(root, text="PGN File:").grid(row=0, column=0, padx=10, pady=5, sticky="e")
+    entry_pgn_file = Entry(root, width=50)
+    entry_pgn_file.grid(row=0, column=1, padx=10, pady=5)
+    Button(root, text="Browse", command=select_pgn_file).grid(row=0, column=2, padx=10, pady=5)
+
+    Label(root, text="Color (White/Black):").grid(row=1, column=0, padx=10, pady=5, sticky="e")
+    entry_color = Entry(root, width=50)
+    entry_color.grid(row=1, column=1, padx=10, pady=5)
+
+    Button(root, text="Analyze", command=analyze_file).grid(row=2, column=1, pady=10)
+    Button(root, text="Search Engine", command=search_engine).grid(row=3, column=1, pady=10)
+
+    result_text = Text(root, wrap="word", height=25, width=100)
+    result_text.grid(row=4, column=0, columnspan=3, padx=10, pady=5)
+
+    scrollbar = Scrollbar(root, command=result_text.yview)
+    result_text.configure(yscrollcommand=scrollbar.set)
+    scrollbar.grid(row=4, column=3, sticky="ns")
+
+    # Proses otomatis semua file di direktori
+    global_tokens = process_all_files("/home/ep/Documents/Github/Information_Retrieval_System/Analyze_E-book/Dataset/")
+
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
