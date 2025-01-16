@@ -33,7 +33,7 @@ def preprocess_text(file_path):
 
         return simple_tokenizer(text)
     except Exception as e:
-        messagebox.showerror("Error", f"Error processing file {file_path}: {e}")
+        messagebox.showerror("Error", f"Failed to preprocess text: {e}")
         return []
 
 # Analisis PGN
@@ -147,11 +147,32 @@ def main():
     def search_engine():
         search_query = " ".join(global_tokens[:2]) if global_tokens else ""
         result_text.delete(1.0, "end")
-        result_text.insert("end", f"Search Query: {search_query}\n")
+
+        result_text.insert("end", f"Search Results for Query: '{search_query}'\n\n")
+        matched_files = []
+
+        for root, _, files in os.walk("/home/ep/Documents/Github/Information_Retrieval_System/Analyze_E-book/Dataset/"):
+            for file in files:
+                if file.endswith(".pdf") or file.endswith(".docx"):
+                    file_path = os.path.join(root, file)
+                    tokens = preprocess_text(file_path)
+                    if search_query in " ".join(tokens):
+                        matched_files.append(file)
+
+        if matched_files:
+            for file in matched_files:
+                result_text.insert("end", f"- {file}\n")
+        else:
+            result_text.insert("end", "No matching files found.\n")
 
     # GUI
     root = Tk()
     root.title("Chess Analysis Tool")
+    root.geometry("800x600")
+
+    # Close button
+    close_button = Button(root, text="X", command=root.quit, bg="red", fg="white")
+    close_button.place(relx=1.0, rely=0.0, anchor="ne")
 
     Label(root, text="PGN File:").grid(row=0, column=0, padx=10, pady=5, sticky="e")
     entry_pgn_file = Entry(root, width=50)
@@ -165,7 +186,7 @@ def main():
     Button(root, text="Analyze", command=analyze_file).grid(row=2, column=1, pady=10)
     Button(root, text="Search Engine", command=search_engine).grid(row=3, column=1, pady=10)
 
-    result_text = Text(root, wrap="word", height=25, width=100)
+    result_text = Text(root, wrap="word", height=30, width=120)
     result_text.grid(row=4, column=0, columnspan=3, padx=10, pady=5)
 
     scrollbar = Scrollbar(root, command=result_text.yview)
