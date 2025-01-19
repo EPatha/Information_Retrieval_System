@@ -1,5 +1,76 @@
 # Development of an E-Book Recommendation System Based on Opening Chess Weakness Analysis
 
+## 2. Ringkasan dan Permasalahan Project + Tujuan yang Akan Dicapai + Model / Alur Penyelesaian
+
+### Ringkasan
+Proyek ini bertujuan untuk mengembangkan sistem rekomendasi e-book yang menyarankan buku berdasarkan analisis kelemahan dalam pembukaan catur. Sistem ini menggunakan teknik pengambilan data untuk menemukan e-book yang relevan dan memberikan rekomendasi yang dapat membantu pemain catur meningkatkan pemahaman dan strategi mereka dalam pembukaan permainan.
+
+### Permasalahan
+Permasalahan utama yang ingin diselesaikan oleh proyek ini adalah:
+- Bagaimana cara menganalisis kelemahan pembukaan tanpa perlu pakai aplikasi berbayar 600k/tahun?
+- Bagaimana cara merekomendasikan e-book yang relevan berdasarkan analisis kelemahan pembukaan catur?
+
+### Tujuan yang Akan Dicapai
+Tujuan dari proyek ini adalah:
+- Menghemat biaya dan mengidentifikasi kelemahan pada fase pembukaan.
+- Merekomendasikan e-book yang relevan untuk membantu pemain catur meningkatkan pemahaman mereka tentang pembukaan yang efektif.
+
+### Model / Alur Penyelesaian
+Berikut adalah bagan alur penyelesaian proyek:
+
+```mermaid
+graph TD;
+    A[Mulai] --> B[Pengumpulan Data]
+    B --> C[Preprocessing Data]
+    C --> D[Ekstraksi Fitur]
+    D --> E[Pelatihan Model]
+    E --> F[Generasi Rekomendasi]
+    F --> G[Selesai]
+```
+
+## 3. Penjelasan Dataset, EDA dan Proses Features Dataset
+
+### Penjelasan Dataset
+Dataset yang digunakan dalam proyek ini terdiri dari dua bagian:
+1. **Data Retrieval Dataset**: Dataset ini terdiri dari 7 e-book dalam format PDF dan DOCX yang mencakup berbagai topik terkait strategi catur, terutama teori pembukaan.
+2. **Opening Weakness Analysis Dataset**: Dataset untuk menganalisis kelemahan pembukaan terdiri dari data permainan PGN pribadi yang diperoleh dari Chess.com melalui OpeningTree.com.
+
+### Exploratory Data Analysis (EDA)
+EDA dilakukan untuk memahami struktur dan karakteristik dataset. Langkah-langkah EDA meliputi:
+- Memuat file PGN dan mengurai permainan catur.
+- Menghitung jumlah permainan untuk setiap pembukaan.
+- Menghitung win rate untuk setiap pembukaan berdasarkan warna.
+
+### Proses Features Dataset
+Proses features dataset meliputi:
+- Mengurai permainan catur menjadi daftar gerakan dan hasil.
+- Mengelompokkan permainan berdasarkan pembukaan.
+- Menghitung jumlah permainan dan win rate untuk setiap pembukaan.
+
+## 4. Proses Learning / Modeling
+
+Proses learning atau modeling dalam proyek ini meliputi:
+- Memuat file PGN dan mengurai permainan catur.
+- Menghitung win rate untuk setiap pembukaan berdasarkan warna.
+- Menampilkan hasil analisis dalam bentuk tabel.
+- Memberikan rekomendasi pembukaan yang perlu dipelajari lebih lanjut berdasarkan win rate terendah.
+
+## 5. Performa Model
+
+Performa model diukur berdasarkan kemampuan aplikasi untuk:
+- Memuat dan mengurai file PGN dengan benar.
+- Menghitung win rate untuk setiap pembukaan dengan akurat.
+- Menampilkan hasil analisis dalam bentuk yang mudah dipahami oleh pengguna.
+- Memberikan rekomendasi pembukaan yang relevan berdasarkan win rate.
+
+## 6. Diskusi Hasil dan Kesimpulan
+
+### Diskusi Hasil
+Hasil analisis menunjukkan bahwa aplikasi Chess Analyzer dapat membantu pemain catur mengidentifikasi kelemahan pada fase pembukaan. Aplikasi ini berhasil menghitung win rate untuk setiap pembukaan dan memberikan rekomendasi pembukaan yang perlu dipelajari lebih lanjut.
+
+### Kesimpulan
+Proyek Chess Analyzer berhasil mencapai tujuan yang ditetapkan. Aplikasi ini dapat memuat file PGN, menganalisis permainan catur, menghitung win rate untuk setiap pembukaan, dan memberikan rekomendasi pembukaan yang perlu dipelajari lebih lanjut. Aplikasi ini dapat digunakan oleh pemain catur untuk meningkatkan permainan mereka dengan fokus pada pembukaan yang memiliki win rate terendah.
+
 ## Project Description
 
 This project aims to develop an **e-book recommendation system** that suggests books based on the analysis of weaknesses in chess openings. The system utilizes **data retrieval techniques** to find relevant e-books and provide recommendations that can help chess players improve their understanding of and strategies for opening play.
