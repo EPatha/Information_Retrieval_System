@@ -1,3 +1,8 @@
 streamlit
 python-chess
 pandas
+nltk
+requests
+beautifulsoup4
+PyPDF2
+python-docx
